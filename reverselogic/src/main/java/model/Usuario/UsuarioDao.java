@@ -12,7 +12,6 @@ import model.Usuario.UsuarioVo;
 
 public class UsuarioDao {
 
-
     //!ADVERTENCIA:  En las clases Dao podremos realizar diferentes ejecucuines como lo hacemos en phpMyAdmin o WorkBench.
     //?  Atrubutos para realizar acciones en la base de datos.   e
     Connection con; //objeto de conexión
@@ -31,7 +30,7 @@ public class UsuarioDao {
 
         System.out.println(sql);
 
-        try{ 
+        try{
             ps=con.prepareStatement(sql); //preparar sentencia.
             ps.setString(1, Usuario.getUsu_Nombre());
             ps.setInt(2, Usuario.getUsu_Rol());

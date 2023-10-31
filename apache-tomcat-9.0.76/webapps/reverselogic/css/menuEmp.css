@@ -1,0 +1,135 @@
+body{
+    background-image: url("../img/fondoMenu.jpg");
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*menuuu*/
+.all{
+    position: relative;
+    height: 100vh;
+}
+
+
+header{
+    background: #ffffff55;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.cont3{
+    
+    position: absolute;
+    left: 85%;
+    margin-top: -62px;
+}
+#img2{
+    width: 40px;
+    cursor: pointer;
+
+}
+.img2 .contMenu:hover   {
+    display: block  ;
+}
+
+
+.menu{
+    position: absolute;
+    left: 82%;
+    margin-top: -52px;
+    text-decoration: underline;
+}
+
+header img{
+    margin-left: 18px;
+    width: 220px;
+}
+
+.containerCards{
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    height: 70%;
+    align-items: center;
+    padding: 40px 300px;
+}
+
+
+
+.prendas{
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    transition: 300ms;
+    text-align: center;
+    border-radius: 13px;
+    box-shadow: 2px 5px 15px;
+}
+
+.imgChaqueta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px px #000);
+}
+
+.imgChaqueta h2{
+    margin: 10px 0
+}
+
+.imgChaqueta p{
+    margin-bottom: 10px;
+}
+
+.btnContainer{
+    margin-bottom: 30px;
+}
+
+.btnContainer button{
+    padding: 7px 15px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.cards:hover .detalle {
+    background-size: cover;
+}
+
+
+.imgChaqueta:hover img{
+    transform: translateY(-20px);
+    background-size: cover;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+

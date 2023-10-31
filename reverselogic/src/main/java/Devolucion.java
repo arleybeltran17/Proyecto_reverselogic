@@ -13,7 +13,6 @@ import javax.servlet.http.HttpSession;
 
 import model.Devolucion.DevolucionDao;
 import model.Devolucion.DevolucionVo;
-import model.Usuario.UsuarioDao;
 
 public class Devolucion extends HttpServlet{
 
@@ -27,7 +26,7 @@ public class Devolucion extends HttpServlet{
         
         System.out.println("Entró al DoGet");
         String enviar=req.getParameter("enviar");
-    HttpSession session = req.getSession();
+        HttpSession session = req.getSession();
         switch(enviar){
             case "devolucion":{
             req.getRequestDispatcher("pages/Devolucion/devolucion.jsp").forward(req, resp);
@@ -45,7 +44,7 @@ public class Devolucion extends HttpServlet{
             break;
 
             case "consultarDevolucion":
-            req.getRequestDispatcher("pages/Devolucion/consultarDevoluvion.jsp").forward(req, resp);
+            req.getRequestDispatcher("pages/Devolucion/consultarDevolucion.jsp").forward(req, resp);
             session.setAttribute("mostrarModalActualizacion", true);
             System.out.println("Se Ha Redireccionado Al Consultar");
             break;
@@ -63,7 +62,7 @@ public class Devolucion extends HttpServlet{
         HttpSession session = req.getSession();
         
         switch (enviar) {
-            case "registrarDevolucion":
+            case "registerDevo":
                 System.out.println("Acabas de entrar al caso 'add'");
                 session.setAttribute("mostrarModalActualizacion", true);
                 add(req, resp);
@@ -159,7 +158,7 @@ public class Devolucion extends HttpServlet{
         private void listar(HttpServletRequest req, HttpServletResponse resp) {
     try {
         List<DevolucionVo> devolucion = rd.listarDevo();
-        req.setAttribute("devolucion", devolucion);
+        req.setAttribute("devoluciones", devolucion);
         req.getRequestDispatcher("pages/consultaDevolucion/consultarDevolucion.jsp").forward(req, resp);
 
         System.out.println("Datos listados correctamente");

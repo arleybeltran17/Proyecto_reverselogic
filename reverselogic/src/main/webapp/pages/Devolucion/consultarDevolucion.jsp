@@ -15,15 +15,15 @@
     <div class="cont2"></div>
         <div class="all">
     <header>
-        <img src="img/logo-removebg-preview.png">
+        <img src="<%= request.getContextPath() %>/img/logo-removebg-preview.png" alt="Mi Imagen">
         
     <div class="menu">
         <ul>
             <li class="submenu">
-                <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
+                <a href="#"><img class="imgbtn" src="<%= request.getContextPath() %>/img/usuario-de-perfil.png" alt="Usuario"></a>
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
-                    <li><a href="index.jsp"><button>Menú</button> </a></li>
+                    <li><a href="Devolucion?enviar=devolucion"><button>Menú</button> </a></li>
                     <li><a href="#"><button>Salir</button> </a></li>
                 </ul>
             </li>
@@ -37,7 +37,7 @@
     <%@ page import="model.Devolucion.DevolucionDao" %>
 
     <%-- Obtener la lista de usuarios desde la base de datos --%>
-    <% List<DevolucionVo> devolucions = null;
+    <% List<DevolucionVo> devoluciones = null;
         try {
             devoluciones= new DevolucionDao().listarDevo();
         } catch (Exception e) {
@@ -56,7 +56,7 @@
                             </div>
                             <div class="card--info">
                                 <p class="card--subtittle">Cantidad Producto</p>
-                                <p id="Devo_Cant_Preducto<%= devolucion.getDevo_id() %>" class="cardCantidadDevo"><%= devolucion.getDevo_Cant_Preducto() %></id=></p>
+                                <p id="Devo_Cant_Preducto<%= devolucion.getDevo_id() %>" class="cardCantidadDevo"><%= devolucion.getDevo_Cant_Preducto() %></id></p>
                                  <p class="card--subtittle">Razon</p>
                                 <p id="Devo_Razon<%= devolucion.getDevo_id() %>" class="cardRazonDevo"><%= devolucion.getDevo_Razon() %></p>
                                 <p class="card--subtittle">Fecha</p>
@@ -64,7 +64,7 @@
                                 <p class="card--subtittle">Id Empleado</p>
                                 <p id="Devo_Emple_id_<%= devolucion.getDevo_Emple_id() %>" class="cardEmpleidDevo"><%= devolucion.getDevo_Emple_id() %></p>
 
-                                <form action="Devolucion" method="post">
+                                <form action="<%= request.getContextPath() %>/Devolucion" method="post">
                                     <input type="hidden" name="enviar" value="eliminarDevo">
                                     <input type="hidden" name="Devo_id" value="<%= devolucion.getDevo_id() %>">
                                     <button type="submit" class="btn-delete">Eliminar</button>

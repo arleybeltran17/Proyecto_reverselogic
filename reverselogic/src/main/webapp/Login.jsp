@@ -16,20 +16,29 @@
 
 
 <div class="cont">
-    <form action="">
-        <label for="">Nombre Usuario</label>
+    <form id="frmValidacion" novalidate>
+        
+    <div id="InputEmail">
+        <label >E-mail </label>
         <br>
-        <input type="text" placeholder="Ingrese el nombre del ususario" required min="5" >
-        <br><br>
-        <label for="">Contraseña</label>
+        <input type="email" name="correo" id="correo" placeholder="Ingrese el nombre del ususario" required min="5" >
+        <div class="feedback"></div>
+    </div>
+    <br><br>
+    <div id="InputPass">
+        <label>Password</label>
         <br>
-        <input type="text" placeholder="Ingrese la contraseña" required>
-        <br><br>
-        <button >Ingresar</button>
-        <a href="#">¿Has olvidado tu contraseña?</a>
+        <input type="password" name="pass" id="pass" placeholder="Ingrese su password" required>
+        <div class="feedback"></div>
+    </div>
+    <br><br>
+        <button type="submit" id="buton" >Ingresar</button>
+        <a href="#">Has olvidado tu password?</a>
+
     </form>
 </div>
 <div class="cont2"></div>   
 
+<script src="js/validacion.js"></script>
 </body>
 </html>

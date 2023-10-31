@@ -92,15 +92,15 @@ public class Usuario extends HttpServlet{
     //? ADD - REGISTER+
     private void add(HttpServletRequest req, HttpServletResponse resp) {
 
-        if(req.getParameter("Usu_Nombre")!=null){
+        if(req.getParameter("Usu_Nombre")!=null){  
             r.setUsu_Nombre( req.getParameter("Usu_Nombre")); 
         }
         if(req.getParameter("Usu_Rol")!=null){
             r.setUsu_Rol(Integer.parseInt(req.getParameter("Usu_Rol"))); 
         }
         if(req.getParameter("Usu_Contraseña")!=null){
-            r.setUsu_Contraseña(req.getParameter("Usu_Contraseña")); 
-
+            r.setUsu_Contraseña(req.getParameter("Usu_Contraseña"));
+            
         }if(req.getParameter("Emple_Id")!=null){
             r.setEmple_Id(Integer.parseInt(req.getParameter("Emple_Id"))); 
         }
@@ -112,7 +112,7 @@ public class Usuario extends HttpServlet{
             System.out.println("Registro insertado correctamente");
 
             //? Redireccionamiento preventivo.       
-            req.getRequestDispatcher("pages/Empleado/ConsultarEmple.jsp").forward(req, resp);
+            req.getRequestDispatcher("pages/Usuario/ConsultarUsu.jsp").forward(req, resp);
 
         } catch (Exception e) {
             System.out.println("Error en la inserción del registro "+e.getMessage().toString());

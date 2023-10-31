@@ -57,7 +57,7 @@
                             </div>
                             <div class="card--info">
                                 <p class="card--subtittle">TIPO DOCUMENTO</p>
-                                <p id="Emple_Tipo_Doc_<%= empleado.getEmple_Id() %>" class="cardEmpleTipoDoc" ><%= empleado.getEmple_Tipo_Doc() %></id=></p>
+                                <p id="Emple_Tipo_Doc_<%= empleado.getEmple_Id() %>" class="cardEmpleTipoDoc" ><%= empleado.getEmple_Tipo_Doc() %></id></p>
                                  <br>
                                 <p class="card--subtittle">NUMERO DOCUMENTO</p>
                                 <p id="Emple_Num_Doc_<%= empleado.getEmple_Id() %>" class="cardEmpleNumDoc" ><%= empleado.getEmple_Num_Doc() %></p>
