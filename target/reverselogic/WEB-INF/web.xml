@@ -1,0 +1,68 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+   <welcome-file-list> 
+       <welcome-file>index.jsp</welcome-file>  
+   </welcome-file-list> 
+  
+  <!--? Definición del servlet ReverseLogic -->
+  <servlet> 
+    <servlet-name>ReverseLogic</servlet-name> 
+    <servlet-class>ReverseLogic</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>ReverseLogic</servlet-name> 
+    <url-pattern>/ReverseLogic</url-pattern>  
+  </servlet-mapping> 
+
+  <!--? Definición del servlet Empleado -->
+  <servlet> 
+    <servlet-name>Empleado</servlet-name> 
+    <servlet-class>Empleado</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Empleado</servlet-name> 
+    <url-pattern>/Empleado</url-pattern>  
+  </servlet-mapping> 
+
+
+    <!--? Definición del servlet Cliente -->
+  <servlet> 
+    <servlet-name>Cliente</servlet-name> 
+    <servlet-class>Cliente</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Cliente</servlet-name> 
+    <url-pattern>/Cliente</url-pattern>  
+  </servlet-mapping> 
+
+   <!--? Definición del servlet Usuario -->
+  <servlet> 
+    <servlet-name>Usuario</servlet-name> 
+    <servlet-class>Usuario</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Usuario</servlet-name> 
+    <url-pattern>/Usuario</url-pattern>  
+  </servlet-mapping> 
+
+   <!--? Definición del servlet Devolucion -->
+  <servlet> 
+    <servlet-name>Devolucion</servlet-name> 
+    <servlet-class>Devolucion</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Devolucion</servlet-name> 
+    <url-pattern>/Devolucion</url-pattern>  
+  </servlet-mapping> 
+
+
+</web-app>

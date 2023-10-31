@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 39px;
+    position: relative;
+    left: 10%;
+    width: 440px;
+
+}
+p{
+    color: aliceblue;
+    position: relative;
+    top:7%;
+    right: 13%;
+    text-decoration: underline;
+    font-size: 19px;
+}
+.cont2{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 50%;
+    z-index: -1;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 40%;
+    background: #00000086;
+    position: relative;
+    right: 8%;
+    border-radius: 10px;
+}
+
+.cont label{
+    color: aliceblue;
+    position: relative;
+    top: -7px;
+}
+
+.cont input{
+    
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: none;
+    height: 40px;
+    width: 330px;
+}
+
+.cont input::placeholder{
+    color: aliceblue;
+    position: relative;
+    left: 3px;
+}
+.cont button{
+    color: aliceblue;
+    position: relative;
+    left: 38%;
+    width: 90px;
+    height: 30px;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+}
+
+.cont button:hover{
+    position: relative;
+    left: 39%;
+    transition: 1s;
+    
+}
+.cont a{
+    color: aliceblue;
+    position: relative;
+    right: 15%;
+    top: 40px;
+    text-decoration: none;
+}
+
+
+
