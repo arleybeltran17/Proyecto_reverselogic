@@ -1,0 +1,37 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+        version="3.1">
+
+<welcome-file-list>
+  <welcome-file>index.jsp</welcome-file> 
+</welcome-file-list>
+
+<!--BOLSILLO NORMAL-->
+  <!--CLASE EN JAVA-->
+  <!--Controlador principal-->
+  <servlet>
+    <servlet-name>Controler</servlet-name>
+    <servlet-class>Controler</servlet-class>
+  </servlet>
+
+<!--HEAD DE LA PAGINA WEB-->  
+  <servlet-mapping>
+    <servlet-name>Controler</servlet-name>
+    <url-pattern>/controler</url-pattern>
+  </servlet-mapping>
+
+<!--CONTROLADOR-->
+  <!--CLASE EN JAVA-->
+  <servlet>
+  <servlet-name>controller.Usuario</servlet-name>
+  <servlet-class>controller.Usuario</servlet-class>
+</servlet>
+
+<!--HEAD DE LA PAGINA WEB-->
+<servlet-mapping> 
+  <servlet-name>controller.Usuario</servlet-name>
+  <url-pattern>/usuario</url-pattern>
+</servlet-mapping>
+</web-app>
