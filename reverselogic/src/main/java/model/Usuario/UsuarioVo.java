@@ -8,17 +8,17 @@ public class UsuarioVo {
     private int Usu_Id;
     private String Usu_Nombre;
     private int Usu_Rol;
-    private String Usu_Contraseña;
+    private String Usu_Password;
     private int Emple_Id;
 
     public UsuarioVo() {
     }
 
-    public UsuarioVo(int usu_Id, String usu_Nombre, int usu_Rol, String usu_Contraseña, int emple_Id) {
+    public UsuarioVo(int usu_Id, String usu_Nombre, int usu_Rol, String usu_Password, int emple_Id) {
         Usu_Id = usu_Id;
         Usu_Nombre = usu_Nombre;
         Usu_Rol = usu_Rol;
-        Usu_Contraseña = usu_Contraseña;
+        Usu_Password = usu_Password;
         Emple_Id = emple_Id;
     }
 
@@ -46,12 +46,12 @@ public class UsuarioVo {
         Usu_Rol = usu_Rol;
     }
 
-    public String getUsu_Contraseña() {
-        return Usu_Contraseña;
+    public String getUsu_Password() {
+        return Usu_Password;
     }
 
-    public void setUsu_Contraseña(String usu_Contraseña) {
-        Usu_Contraseña = usu_Contraseña;
+    public void setUsu_Password(String usu_Password) {
+        Usu_Password = usu_Password;
     }
 
     public int getEmple_Id() {
@@ -62,6 +62,7 @@ public class UsuarioVo {
         Emple_Id = emple_Id;
     }
 
+   
     
     
 }

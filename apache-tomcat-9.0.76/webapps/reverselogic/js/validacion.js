@@ -1,6 +1,4 @@
 
-const email = /^[a-zA-Z0-9._%+-]+@gmail\.com$/
-const pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
 
 const form = document.getElementById("frmValidacion");
 console.log(form);

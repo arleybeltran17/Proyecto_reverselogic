@@ -1,5 +1,6 @@
 package model.Usuario;
 
+import java.security.spec.ECFieldF2m;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -26,7 +27,7 @@ public class UsuarioDao {
 
     public int registrarUsu(UsuarioVo Usuario) throws SQLException{
     
-        sql="INSERT INTO usuario (Usu_Nombre, Usu_Rol, Usu_Contraseña, Emple_Id) values (?,?,?,?)";
+        sql="INSERT INTO usuario (Usu_Nombre, Usu_Rol, Usu_Password, Emple_Id) values (?,?,?,?)";
 
         System.out.println(sql);
 
@@ -34,7 +35,7 @@ public class UsuarioDao {
             ps=con.prepareStatement(sql); //preparar sentencia.
             ps.setString(1, Usuario.getUsu_Nombre());
             ps.setInt(2, Usuario.getUsu_Rol());
-            ps.setString(3, Usuario.getUsu_Contraseña());
+            ps.setString(3, Usuario.getUsu_Password());
             ps.setInt(4, Usuario.getEmple_Id());
 
             r = ps.executeUpdate();
@@ -60,7 +61,7 @@ public class UsuarioDao {
                 r.setUsu_Id(rs.getInt("Usu_Id"));
                 r.setUsu_Nombre(rs.getString("Usu_Nombre"));
                 r.setUsu_Rol(rs.getInt("Usu_Rol"));
-                r.setUsu_Contraseña(rs.getString("Usu_Contraseña"));
+                r.setUsu_Password(rs.getString("Usu_Password"));
                 r.setEmple_Id(rs.getInt("Emple_Id"));
                 usuario.add(r);
             }
@@ -80,7 +81,7 @@ public class UsuarioDao {
     //? Actualizar usuario.
     public int actualizarUsu(UsuarioVo Usuario) throws SQLException{
 
-        sql="update Usuario set Usu_Nombre = ?, Usu_Rol = ?, Usu_Contraseña = ?, Emple_Id=? where Usu_Id = ? "; 
+        sql="update Usuario set Usu_Nombre = ?, Usu_Rol = ?, Usu_Password = ?, Emple_Id=? where Usu_Id = ? "; 
         System.out.println(sql);
 
         try{
@@ -88,7 +89,7 @@ public class UsuarioDao {
             ps=con.prepareStatement(sql); //preparar sentencia.
             ps.setString(1, Usuario.getUsu_Nombre());
             ps.setInt(2, Usuario.getUsu_Rol());
-            ps.setString(3, Usuario.getUsu_Contraseña());
+            ps.setString(3, Usuario.getUsu_Password());
             ps.setInt(4, Usuario.getEmple_Id());
             ps.setInt(5, Usuario.getUsu_Id());
             System.out.println(ps);
@@ -118,6 +119,27 @@ public class UsuarioDao {
             throw e;
         }
 }
+
+    public boolean validarLogin(String Usu_Nombre, String Usu_Password) throws SQLException{
+        sql="select 1 from usuario where Usu_Nombre=? and Usu_Password=?";
+        try{
+            con=Conexion.conectar();
+            ps=con.prepareStatement(sql);
+
+            ps.setString(1, Usu_Nombre);
+            ps.setString(2, Usu_Password);
+            try(ResultSet rs=ps.executeQuery()){
+                return rs.next();
+            }
+        }catch(Exception e){
+            System.out.println("Error En La Validacion Del Login");
+        }finally{
+            con.close();
+        }
+
+        return false;
+
+    }
 
 }
 

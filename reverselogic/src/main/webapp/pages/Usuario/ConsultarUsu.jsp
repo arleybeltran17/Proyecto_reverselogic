@@ -55,13 +55,13 @@
                                 <img src="img/icons8-usuario-100.png" alt="a" width="150px" height="150px">
                             </div>
                             <div class="card--info">
-                                <p class="card--subtittle">TIPO DOC</p>
+                                <p class="card--subtittle">NOMBRE USUARIO</p>
                                 <p id="Usu_Nombre_<%= usuario.getUsu_Id() %>" class="cardUsuNombre"><%= usuario.getUsu_Nombre() %></id=></p>
-                                 <p class="card--subtittle">N DOC</p>
+                                 <p class="card--subtittle">ROL</p>
                                 <p id="Usu_Rol_<%= usuario.getUsu_Id() %>" class="cardUsuRol"><%= usuario.getUsu_Rol() %></p>
-                                <p class="card--subtittle">NOM</p>
-                                <p id="Usu_Contraseña_<%= usuario.getUsu_Id() %>" class="cardUsuContraseña"><%= usuario.getUsu_Contraseña() %></p>
-                                <p class="card--subtittle">Apellido</p>
+                                <p class="card--subtittle">CONTRASEÑA</p>
+                                <p id="Usu_Contraseña_<%= usuario.getUsu_Id() %>" class="cardUsuContraseña"><%= usuario.getUsu_Password() %></p>
+                                <p class="card--subtittle">EMPLE ID</p>
                                 <p id="Emple_Id_<%= usuario.getUsu_Id() %>" class="cardEmpleId"><%= usuario.getEmple_Id() %></p>
 
                                 <form action="Usuario" method="post">

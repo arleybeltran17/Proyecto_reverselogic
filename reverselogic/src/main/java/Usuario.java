@@ -84,6 +84,13 @@ public class Usuario extends HttpServlet{
                 
                 delete(req, resp);
                 break;
+
+                case "LoginUsu":
+                System.out.println("Has Accedido Al Caso Login");
+                session.setAttribute("mostrarModalActualizacion", true);
+                
+                LoginUser(req, resp);
+                break;
         }
     }
 
@@ -98,8 +105,8 @@ public class Usuario extends HttpServlet{
         if(req.getParameter("Usu_Rol")!=null){
             r.setUsu_Rol(Integer.parseInt(req.getParameter("Usu_Rol"))); 
         }
-        if(req.getParameter("Usu_Contraseña")!=null){
-            r.setUsu_Contraseña(req.getParameter("Usu_Contraseña"));
+        if(req.getParameter("Usu_Password")!=null){
+            r.setUsu_Password(req.getParameter("Usu_Password"));
             
         }if(req.getParameter("Emple_Id")!=null){
             r.setEmple_Id(Integer.parseInt(req.getParameter("Emple_Id"))); 
@@ -127,8 +134,8 @@ public class Usuario extends HttpServlet{
         if(req.getParameter("Usu_Rol")!=null){
             r.setUsu_Rol(Integer.parseInt(req.getParameter("Usu_Rol"))); 
         }
-        if(req.getParameter("Usu_Contraseña")!=null){
-            r.setUsu_Contraseña(req.getParameter("Usu_Contraseña")); 
+        if(req.getParameter("Usu_Password")!=null){
+            r.setUsu_Password(req.getParameter("Usu_Password")); 
 
         }if(req.getParameter("Emple_Id")!=null){
             r.setEmple_Id(Integer.parseInt(req.getParameter("Emple_Id"))); 
@@ -146,8 +153,6 @@ public class Usuario extends HttpServlet{
             System.out.println("Error en la actualizacion del registro "+e.getMessage().toString());
         }
     }
-
-    
 
         private void listar(HttpServletRequest req, HttpServletResponse resp) {
     try {
@@ -171,11 +176,11 @@ public class Usuario extends HttpServlet{
             System.out.println("ID Del Producto A Eliminar: " + UsuIdToDelete);
     
             new UsuarioDao().eliminarUsu(UsuIdToDelete);
-            System.out.println("Empleado eliminado correctamente");
+            System.out.println("Usuario eliminado correctamente");
 
             // Redireccionamiento preventivo.
             // Redirige nuevamente a la página de listado de usuarios después de eliminar
-            resp.sendRedirect(req.getContextPath() + "/Empleado?enviar=ConsultarEmple");
+            resp.sendRedirect(req.getContextPath() + "/Usuario?enviar=ConsultarUsu");
         } catch (NumberFormatException e) {
             // Si ocurre un error al convertir el ID a entero
             e.printStackTrace();
@@ -184,6 +189,32 @@ public class Usuario extends HttpServlet{
             // Si ocurre un error al eliminar el usuario en la base de datos
             e.printStackTrace();
             resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al eliminar el Empleado");
+        }
+    }
+
+    private void LoginUser(HttpServletRequest req,  HttpServletResponse resp) throws ServletException, IOException{
+        String Nombre= req.getParameter("inputUsername");
+        String Password = req.getParameter("inputPassword");
+
+        if(Nombre != null && Nombre.isEmpty() && Password != null && Password.isEmpty()){
+            try{
+                if (rd.validarLogin(Nombre,Password)) {
+                    System.out.println("La Validacion Ha Sido Exitosa");
+                    req.getRequestDispatcher("index.jsp").forward(req, resp);
+                    
+                }else{
+                    System.out.println("Usuario Y/O Contraseña No Encontrados");
+                    req.setAttribute("mensaje", "Usuario Y/O Contraseña No Encontrados:(");
+                    req.getRequestDispatcher("Login.jsp");
+                }
+            }catch(Exception e){
+                e.printStackTrace();
+                resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error Al Iniciar Sesion");
+            }
+
+        }else{
+            req.setAttribute("mensaje", "Usuario Y/O Contraseña No Encontrados:(");
+            req.getRequestDispatcher("Login.jsp").forward(req, resp);
         }
     }
     

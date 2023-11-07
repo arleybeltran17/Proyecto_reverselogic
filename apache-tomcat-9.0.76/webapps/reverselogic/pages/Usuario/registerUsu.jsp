@@ -41,8 +41,8 @@
                 </div>
                 <br><br>
                 <div class="contlabel2">
-                    <input type="password" name="Usu_Contraseña" id="Usu_Contraseña">
-                <label for="Usu_Contraseña">Contraseña Usuario</label> 
+                    <input type="password" name="Usu_Password" id="Usu_Password">
+                <label for="Usu_Password">Contraseña Usuario</label> 
                 </div>
                 <br><br>
                 <div class="contlabel3">gv
