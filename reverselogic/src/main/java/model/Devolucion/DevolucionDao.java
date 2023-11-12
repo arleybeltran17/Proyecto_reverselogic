@@ -27,7 +27,7 @@ public class DevolucionDao {
 
     public int registerDevo(DevolucionVo Devolucion) throws SQLException{
     
-        sql="INSERT INTO devolucion (Devo_Cant_Preducto, Devo_Razon, Devo_Fecha, Devo_Emple_id) values (?,?,?,?)";
+        sql="INSERT INTO devolucion (Devo_Cant_Preducto, Devo_Razon, Devo_Fecha,Emple_id) values (?,?,?,?)";
 
         System.out.println(sql);
 
@@ -36,7 +36,7 @@ public class DevolucionDao {
             ps.setInt(1, Devolucion.getDevo_Cant_Preducto());
             ps.setString(2, Devolucion.getDevo_Razon());
             ps.setDate(3,Devolucion.getDevo_Fecha());
-            ps.setInt(4, Devolucion.getDevo_Emple_id());
+            ps.setInt(4, Devolucion.getEmple_id());
 
             r = ps.executeUpdate();
             ps.close();
@@ -59,10 +59,10 @@ public class DevolucionDao {
             while (rs.next()) {
                 DevolucionVo r = new DevolucionVo();
                 r.setDevo_id(rs.getInt("Devo_id"));
-                r.setDevo_Cant_Preducto(rs.getInt("Devo_Cantidad_Preducto"));
+                r.setDevo_Cant_Preducto(rs.getInt("Devo_Cant_Preducto"));
                 r.setDevo_Razon(rs.getString("Devo_Razon"));
                 r.setDevo_Fecha(rs.getDate("Devo_Fecha"));
-                r.setDevo_Emple_id(rs.getInt("Devo_Emple_id"));
+                r.setEmple_id(rs.getInt("Emple_id"));
                 devolucion.add(r);
             }
             ps.close();
@@ -81,7 +81,7 @@ public class DevolucionDao {
     //? Actualizar devolucion.
     public int actualizarDevo(DevolucionVo Devolucion) throws SQLException{
 
-        sql="update Devolucion set Devo_Cant_Preducto = ?, Devo_Razon = ?, Devo_Fecha = ?, Devo_Emple_id=? where Devo_id = ? "; 
+        sql="update Devolucion set Devo_Cant_Preducto = ?, Devo_Razon = ?, Devo_Fecha = ?, Emple_id=? where Devo_id = ? "; 
         System.out.println(sql);
 
         try{
@@ -90,7 +90,7 @@ public class DevolucionDao {
             ps.setInt(1, Devolucion.getDevo_Cant_Preducto());
             ps.setString(2, Devolucion.getDevo_Razon());
             ps.setDate(3, Devolucion.getDevo_Fecha());
-            ps.setInt(4, Devolucion.getDevo_Emple_id());
+            ps.setInt(4, Devolucion.getEmple_id());
             ps.setInt(5, Devolucion.getDevo_id());
             System.out.println(ps);
             ps.executeUpdate(); //Ejecutar sentencia.

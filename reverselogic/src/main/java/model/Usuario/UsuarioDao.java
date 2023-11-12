@@ -120,26 +120,34 @@ public class UsuarioDao {
         }
 }
 
-    public boolean validarLogin(String Usu_Nombre, String Usu_Password) throws SQLException{
-        sql="select 1 from usuario where Usu_Nombre=? and Usu_Password=?";
-        try{
-            con=Conexion.conectar();
-            ps=con.prepareStatement(sql);
+public boolean validarLogin(String Usu_Nombre, String Usu_Password) throws SQLException {
+    sql = "select 1 from usuario where Usu_Nombre=? and Usu_Password=?";
+    try {
+        con = Conexion.conectar();
+        ps = con.prepareStatement(sql);
 
-            ps.setString(1, Usu_Nombre);
-            ps.setString(2, Usu_Password);
-            try(ResultSet rs=ps.executeQuery()){
-                return rs.next();
-            }
-        }catch(Exception e){
-            System.out.println("Error En La Validacion Del Login");
-        }finally{
-            con.close();
+        ps.setString(1, Usu_Nombre);
+        ps.setString(2, Usu_Password);
+
+        try (ResultSet rs = ps.executeQuery()) {
+            return rs.next();
         }
-
-        return false;
-
+    } catch (SQLException e) {
+        e.printStackTrace();
+        System.out.println("Error en la validación del login: " + e.getMessage());
+    } finally {
+        try {
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("Error al cerrar la conexión: " + e.getMessage());
+        }
     }
+
+    return false;
+}
 
 }
 

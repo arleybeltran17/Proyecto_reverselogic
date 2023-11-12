@@ -192,29 +192,32 @@ public class Usuario extends HttpServlet{
         }
     }
 
-    private void LoginUser(HttpServletRequest req,  HttpServletResponse resp) throws ServletException, IOException{
-        String Nombre= req.getParameter("inputUsername");
-        String Password = req.getParameter("inputPassword");
-
-        if(Nombre != null && Nombre.isEmpty() && Password != null && Password.isEmpty()){
-            try{
-                if (rd.validarLogin(Nombre,Password)) {
-                    System.out.println("La Validacion Ha Sido Exitosa");
+    private void LoginUser(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String Usu_Nombre = req.getParameter("inputUsername");
+        String Usu_Password = req.getParameter("inputPassword");
+    
+        if (Usu_Nombre != null && !Usu_Nombre.isEmpty() && Usu_Password != null && !Usu_Password.isEmpty()) {
+            try {
+                if (rd.validarLogin(Usu_Nombre, Usu_Password)) {
+                    System.out.println(Usu_Nombre);
+                    System.out.println(Usu_Password);
+                    System.out.println("La Validación Ha Sido Exitosa");
                     req.getRequestDispatcher("index.jsp").forward(req, resp);
-                    
-                }else{
-                    System.out.println("Usuario Y/O Contraseña No Encontrados");
-                    req.setAttribute("mensaje", "Usuario Y/O Contraseña No Encontrados:(");
-                    req.getRequestDispatcher("Login.jsp");
+                } else {
+                    System.out.println(Usu_Nombre);
+                    System.out.println(Usu_Password);
+                    System.out.println("Usuario y/o Contraseña No Encontrados 1");
+                    req.setAttribute("mensaje", "Usuario y/o Contraseña No Encontrados :(");
+                    req.getRequestDispatcher("Login.jsp").forward(req, resp);
                 }
-            }catch(Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
-                resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error Al Iniciar Sesion");
+                req.setAttribute("mensaje", "Error al iniciar sesión: " + e.getMessage());
+                req.getRequestDispatcher("Login.jsp").forward(req, resp);
             }
-
-        }else{
-            req.setAttribute("mensaje", "Usuario Y/O Contraseña No Encontrados:(");
-            req.getRequestDispatcher("Login.jsp").forward(req, resp);
+        } else {
+            req.setAttribute("mensaje", "Usuario y/o Contraseña No Encontrados :(");
+            req.getRequestDispatcher("Login.jsp").forward(req, resp);   
         }
     }
     

@@ -26,8 +26,6 @@
                     </li>
                 </ul>
             </div>
-            
-       
             </header>
     <h1 class="titulo"> Opciones Prenda</h1>
 
@@ -47,19 +45,6 @@
             </div>
         </div>
 
-        <div class="cards">
-            <div class="prendas">
-                <div class="imgChaqueta">
-                    <img src="../../img/actualizarUsu.avif" alt="" width="200px" height="150px">
-                    <div class="detalle">
-                        <h2>Actualizar</h2>
-                        <div class="btnContainer">
-                            <a href="#"> <button class="btnEliminar">Ingresar</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         
 
@@ -78,20 +63,6 @@
             </div>
         </div>
         
-        <div class="cards">
-            <div class="prendas">
-                <div class="imgChaqueta">
-                    <img src="../../img/eliminarUsu.jpg" alt="" width="200px" height="150px" >
-                    <div class="detalle">
-                        <h2>Eliminar</h2>
-                        <div class="btnContainer">
-                            <a href="#"> <button class="btnEliminar">Ingresar</button></a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         </main>
     <footer>
         <div class="media">

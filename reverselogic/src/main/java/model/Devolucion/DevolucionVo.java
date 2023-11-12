@@ -11,17 +11,17 @@ public class DevolucionVo {
     private int Devo_Cant_Preducto;
     private String Devo_Razon;
     private Date Devo_Fecha;
-    private int Devo_Emple_id;
+    private int Emple_id;
 
     public DevolucionVo() {
     }
 
-    public DevolucionVo(int devo_id, int devo_Cant_Preducto, String devo_Razon, Date devo_Fecha, int devo_Emple_id) {
+    public DevolucionVo(int devo_id, int devo_Cant_Preducto, String devo_Razon, Date devo_Fecha, int emple_id) {
         Devo_id = devo_id;
         Devo_Cant_Preducto = devo_Cant_Preducto;
         Devo_Razon = devo_Razon;
         Devo_Fecha = devo_Fecha;
-        Devo_Emple_id = devo_Emple_id;
+        Emple_id = emple_id;
     }
 
     public int getDevo_id() {
@@ -56,13 +56,15 @@ public class DevolucionVo {
         Devo_Fecha = devo_Fecha;
     }
 
-    public int getDevo_Emple_id() {
-        return Devo_Emple_id;
+    public int getEmple_id() {
+        return Emple_id;
     }
 
-    public void setDevo_Emple_id(int devo_Emple_id) {
-        Devo_Emple_id = devo_Emple_id;
+    public void setEmple_id(int emple_id) {
+        Emple_id = emple_id;
     }
+
+    
     
 
 }

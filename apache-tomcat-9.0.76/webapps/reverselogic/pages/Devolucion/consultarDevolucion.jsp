@@ -60,16 +60,16 @@
                                  <p class="card--subtittle">Razon</p>
                                 <p id="Devo_Razon<%= devolucion.getDevo_id() %>" class="cardRazonDevo"><%= devolucion.getDevo_Razon() %></p>
                                 <p class="card--subtittle">Fecha</p>
-                                <p id="Devo_Fecha<%= devolucion.getDevo_id() %>" class="cardUsuContraseña"><%= devolucion.getDevo_Fecha() %></p>
+                                <p id="Devo_Fecha<%= devolucion.getDevo_id() %>" class="cardDevoFecha"><%= devolucion.getDevo_Fecha() %></p>
                                 <p class="card--subtittle">Id Empleado</p>
-                                <p id="Devo_Emple_id_<%= devolucion.getDevo_Emple_id() %>" class="cardEmpleidDevo"><%= devolucion.getDevo_Emple_id() %></p>
+                                <p id="Emple_id_<%= devolucion.getDevo_id() %>" class="cardEmpleidDevo"><%= devolucion.getEmple_id() %></p>
 
                                 <form action="<%= request.getContextPath() %>/Devolucion" method="post">
                                     <input type="hidden" name="enviar" value="eliminarDevo">
                                     <input type="hidden" name="Devo_id" value="<%= devolucion.getDevo_id() %>">
                                     <button type="submit" class="btn-delete">Eliminar</button>
                                 </form>
-                            <button class="btncal" data-usu-id="<%= devolucion.getDevo_id() %>">Actualizar</button>
+                            <button class="btncal" data-devo-id="<%= devolucion.getDevo_id() %>">Actualizar</button>
                             </div>
                             
                         </div>
@@ -82,7 +82,7 @@
             </div>
         </div>
     </div>
-            </body>
+    </body>
             <% 
             Boolean mostrarModal = (Boolean) session.getAttribute("mostrarModalActualizacion");
             if (mostrarModal != null && mostrarModal) {
@@ -96,24 +96,25 @@
             <h2>Actualizar Devolucion</h2>
             <form action="Devolucion" method="post">
         
-            <label for="Devo_id"> ID Devolucion</label>
-            <input type="text" name="Devo_id" id="Devo_id"  placeholder="Ingrese El Id De la Devolucion">
+            <label for="Devo_Id"> ID Empleado</label>
+            <input type="text" name="Devo_Id" id="Devo_Id"  placeholder="Ingrese El Id Del Empleado">
     
-            <label for="Devo_Cant_Preducto">Cantidad del Producto</label>
-            <input type="text" name="Devo_Cant_Preducto" id="Devo_Cant_Preducto" placeholder="Ingrese la cantidad del producto">
+            <label for="Devo_Cant_Preducto"> Cantidad De Producto</label>
+            <input type="text" name="Devo_Cant_Preducto" id="Devo_Cant_Preducto" placeholder="Ingrese La Cantidad Del Producto">
     
-            <label for="Devo_Razon"> Razon de la devolucion</label>
-            <input type="text" name="Devo_Razon" id="Devo_Razon"  placeholder="Ingrese la razon de la devolucion">
+            <label for="Devo_Fecha"> Fecha</label>
+            <input type="Date" name="Devo_Fecha" id="Devo_Fecha" required>
+
+            <label for="Emple_id"> ID Empleado</label>
+            <input type="text" name="Emple_id" id="Emple_id"  placeholder="Ingrese El Id Del Empleado">
     
-            <label for="Devo_Fecha"> Fecha Devollucion</label>
-            <input type="text" name="Devo_Fecha" id="Devo_Fecha"  placeholder="Ingrese La Fecha de la Devolucion">
-    
-            <button class="btncal" name="enviar" value="actualizarDevo">Enviar</button>xx
+            <button class="btncal" name="enviar" value="updateDevo">Enviar</button>
+        
             </form>
             </div>
             </div>
             <% } %>
 
-            <script type="text/javascript" src="js/modal2.js"></script>
+            <script type="text/javascript" src="js/modal3.js"></script>
             </body>
 </html>

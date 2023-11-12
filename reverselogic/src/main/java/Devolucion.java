@@ -68,7 +68,7 @@ public class Devolucion extends HttpServlet{
                 add(req, resp);
                 break;
     
-            case "updateDevolucion":
+            case "updateDevo":
                 System.out.println("Acabas de entrar al caso 'update'");
                 actualizarDevo(req, resp);
                 break;
@@ -105,8 +105,8 @@ public class Devolucion extends HttpServlet{
             r.setDevo_Fecha(Fecha_Devo_Parse_Date);
 
 
-        }if(req.getParameter("Devo_Emple_id")!=null){
-            r.setDevo_Emple_id(Integer.parseInt(req.getParameter("Devo_Emple_id"))); 
+        }if(req.getParameter("Emple_id")!=null){
+            r.setEmple_id(Integer.parseInt(req.getParameter("Emple_id"))); 
         }
         else{
             System.out.println("Error Al Registrar Datos");
@@ -137,7 +137,7 @@ public class Devolucion extends HttpServlet{
             r.setDevo_Fecha(Fecha_Devo_Parse_Date); 
 
         }if(req.getParameter("Devo_Emple_id")!=null){
-            r.setDevo_Emple_id(Integer.parseInt(req.getParameter("Devo_Emple_id"))); 
+            r.setEmple_id(Integer.parseInt(req.getParameter("Emple_id"))); 
         }
 
         

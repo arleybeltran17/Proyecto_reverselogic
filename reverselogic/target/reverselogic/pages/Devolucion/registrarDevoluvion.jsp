@@ -52,7 +52,7 @@
         </div>
         <br><br>
         <div class="contlabel3">
-        <input type="text" name="Devo_Emple_id" id="Devo_Emple_id" required>
+        <input type="text" name="Emple_id" id="Devo_Emple_id" required>
         <label for="Devo_Emple_id">Id Empleado</label>
         </div>
         <br>
