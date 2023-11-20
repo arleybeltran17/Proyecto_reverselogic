@@ -93,37 +93,31 @@
             <div class="modal-content1">
             <span class="close1">X</span>
         
-            <h2>Actualizar Cliente</h2>
-            <form action="Cliente" method="post">
+            <h2>Actualizar Usuarios</h2>
+            <form action="Usuario" method="post">
         
-            <label for="Clie_Id"> ID Cliente</label>
-            <input type="text" name="Clie_Id" id="Clie_Id"  placeholder="Ingrese El Id Del Cliente">
+            <label for="Usu_Id"> ID Usuario</label>
+            <input type="text" name="Usu_Id" id="Usu_Id"  placeholder="Ingrese El Id Del Cliente">
     
-            <label for="Clie_Tipo_Doc"> Tipo De Documento</label>
-            <input type="text" name="Clie_Tipo_Doc" id="Clie_Tipo_Doc" placeholder="Ingrese El Tipo De Documento">
+            <label for="Usu_Nombre"> Nombre Usuario</label>
+            <input type="text" name="Usu_Nombre" id="Usu_Nombre" placeholder="Ingrese El Tipo De Documento">
     
-            <label for="Clie_Num_Doc"> Numero De Documento</label>
-            <input type="text" name="Clie_Num_Doc" id="Clie_Num_Doc"  placeholder="Ingrese El Numero De Documento">
+            <label for="Usu_Rol"> Rol De Usuario</label>
+            <input type="text" name="Usu_Rol" id="Usu_Rol"  placeholder="Ingrese El Numero De Documento">
     
-            <label for="Cliee_Nombre"> Nombre</label>
-            <input type="text" name="Clie_Nombre" id="Clie_Nombre"  placeholder="Ingrese El Nombre Del Cliente">
+            <label for="Usu_Password"> Contraseña De Usuario</label>
+            <input type="text" name="Usu_Password" id="Usu_Password"  placeholder="Ingrese El Nombre Del Cliente">
     
-            <label for="Clie_Apellido"> Apellido</label>
-            <input type="text" name="Clie_Apellido" id="Clie_Apellido"  placeholder="Ingrese El Apellido Del Cliente">
+            <label for="Emple_Id"> Id De Empleado</label>
+            <input type="text" name="Emple_Id" id="Emple_Id"  placeholder="Ingrese El Apellido Del Cliente">
     
-            <label for="Clie_Direccion"> Direccion</label>
-            <input type="text" name="Clie_Direccion" id="Clie_Direccion"  placeholder="Ingrese La Direccion Del Cliente">
-    
-            <label for="Clie_Email"> Email</label>
-            <input type="text" name="Clie_Email" id="Clie_Email"  placeholder="Ingrese El Email Del Cliente">
-    
-            <button class="btncal" name="enviar" value="updateClient">Enviar</button>
+            <button class="btncal" name="enviar" value="updateUsu">Enviar</button>
         
             </form>
             </div>
             </div>
             <% } %>
 
-            <script type="text/javascript" src="js/modal2.js"></script>
+            <script type="text/javascript" src="js/modal4.js"></script>
             </body>
 </html>

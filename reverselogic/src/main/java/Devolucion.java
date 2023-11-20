@@ -103,8 +103,7 @@ public class Devolucion extends HttpServlet{
             String Devo_Fecha = req.getParameter("Devo_Fecha");
             Date Fecha_Devo_Parse_Date= Date.valueOf(Devo_Fecha);
             r.setDevo_Fecha(Fecha_Devo_Parse_Date);
-
-
+            
         }if(req.getParameter("Emple_id")!=null){
             r.setEmple_id(Integer.parseInt(req.getParameter("Emple_id"))); 
         }

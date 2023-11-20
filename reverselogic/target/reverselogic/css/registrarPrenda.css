@@ -1,0 +1,219 @@
+.cont12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 550px;
+    background: rgba(235, 234, 234, 0.512);
+    margin-top: 6%;
+    position: relative;
+    border-radius: 13px;
+  }
+  h1{
+    position: relative;
+    top: 7%;
+  }
+  
+  .cont12 button{
+    position: relative;
+    left: 37%;
+  }
+  
+  .all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contlabel{
+    position: relative;
+    width: 300PX;
+  }
+  .contlabel input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    background: none;
+  }
+  .contlabel label{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    transition: all .5s ease;
+  }
+  
+  .contlabel input:valid ~ label,
+  .contlabel input:focus ~ label{
+    top: -20px;
+    left: 0px;
+    transform: scale(.9);
+  }
+  
+  .contlabel1{
+    position: relative;
+    width: 300PX;
+  }
+  
+  .contlabel1 input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    background: none;
+  }
+  .contlabel1 label{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    transition: all .5s ease;
+  }
+  
+  
+  .contlabel1 input:valid ~ label,
+  .contlabel1 input:focus ~ label{
+    top: -20px;
+    left: 0px;
+    transform: scale(.9);
+  }
+  /*select*/
+  .contlabel2{
+    position: relative;
+    width: 300PX;
+  }
+  
+  .contlabel2 select{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    background: none;
+  }
+
+  
+  
+  
+  /*el siguiente*/
+  .contlabel3{
+    position: relative;
+    width: 300PX;
+  }
+  
+  .contlabel3 input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    background: none;
+  }
+  .contlabel3 label{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    transition: all .5s ease;
+  }
+  
+  
+  .contlabel3 input:valid ~ label,
+  .contlabel3 input:focus ~ label{
+    top: -20px;
+    left: 0px;
+    transform: scale(.9);
+  }
+  
+  /*el siguiente*/
+  .contlabel4{
+    position: relative;
+    width: 300PX;
+  }
+  
+  .contlabel4 input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    background: none;
+  }
+  .contlabel4 label{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    transition: all .5s ease;
+  }
+  
+  
+  .contlabel4 input:valid ~ label,
+  .contlabel4 input:focus ~ label{
+    top: -20px;
+    left: 0px;
+    transform: scale(.9);
+  }
+  /*el siguiente*/
+  .contlabel5{
+    position: relative;
+    width: 300PX;
+  }
+  
+  .contlabel5 input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    background: none;
+  }
+  .contlabel5 label{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    transition: all .5s ease;
+  }
+  
+  
+  .contlabel5 input:valid ~ label,
+  .contlabel5 input:focus ~ label{
+    top: -20px;
+    left: 0px;
+    transform: scale(.9);
+  }
+  /*el siguiente*/
+  .contlabel6{
+    position: relative;
+    width: 300PX;
+  }
+  
+  .contlabel6 input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    background: none;
+  }
+  .contlabel6 label{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    transition: all .5s ease;
+  }
+  
+  
+  .contlabel6 input:valid ~ label,
+  .contlabel6 input:focus ~ label{
+    top: -20px;
+    left: 0px;
+    transform: scale(.9);
+  }
+  button{
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: #3C5784;
+    height: 30px;
+    width: 85px;
+  }
+  
+  

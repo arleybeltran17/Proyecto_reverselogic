@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/usuario.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Usuario</title>
+    <link rel="stylesheet" href="css/registrarEmple.css">
+
+    <title>Venta</title>
 </head>
 <body>
     <body>
@@ -27,23 +31,42 @@
             </div>
             </header>
             <h1>Registrar Venta</h1>
-            <form action="">
-                <label for="">Total de la venta</label>
-                <input type="text" name="" id="" >
-                <label for="">Cantidad de la venta</label>
-                <input type="text" name="" id="">
-                <label for="">Fecha de la venta</label>
-                <input type="date" name="" id="">
-                <button>Registrar</button>
-            </form>
-            <footer>
-        <div class="media">
-              <a href="https://www.facebook.com/profile.php?id=100037372663548"><img class="img1" src="img/facebook.png"></a>
-        <a href="whatsapp://send?phone=+3013519220"><img class="img1" src="img/whatsapp.png"></a>
-        <a href="https://www.instagram.com/laura34vega12/"><img class="img1" src="img/instagram (1).png"></a>
+            <div class="cont12">
+           
+    <form action="Venta" method="post">
+        <br>
+        <div class="contlabel">
+        <input type="text" name="Vent_Cantidad" id="Vent_Cantidad" required>
+        <label for="Vent_Cantidad"> Cantidad de la venta</label>
         </div>
-        <p>&copy; 2023 Confecciones ruth Derechos reservados</p>
-    </footer>
-    <script src="js/menu.js"></script>
+        <br><br>
+        <div class="contlabel2">
+        <input type="Date" name="Vent_Fecha" id="Vent_Fecha" required>
+        <label for="Vent_Fecha"> Fecha</label>
+        </div>
+        <br><br>
+        <div class="contlabel3">
+        <input type="text" name="Usu_Id" id="Usu_Id" required>
+        <label for="Usu_Id"> Id Del Usuario</label>
+        </div>
+        <br><br>
+        <div class="contlabel4">
+        <input type="text" name="Clie_Id" id="Clie_Id" required>
+        <label for="Clie_Id"> Id Del Cliente</label>
+        </div>
+        <br><br>
+        <div class="contlabel5">
+        <input type="text" name="Metod_Id" id="getMetod_Id" required>
+        <label for="getMetod_Id"> Id Del Metodo De Pago</label>
+        </div>
+        <br><br>
+        <div class="contlabel6">
+        <input type="text" name="Prend_Id" id="Prend_Id" required>
+        <label for="Prend_Id">Id Prenda</label>
+        </div>
+        <br>
+        <button id="btncal" name="enviar" value="registerVent">Enviar</button>
+
+    </form>
 </body>
 </html>

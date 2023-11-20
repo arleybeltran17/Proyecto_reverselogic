@@ -1,8 +1,8 @@
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
 <web-app>
+
   <display-name>Archetype Created Web Application</display-name>
    <welcome-file-list> 
        <welcome-file>Login.jsp</welcome-file>  
@@ -64,5 +64,70 @@
     <url-pattern>/Devolucion</url-pattern>  
   </servlet-mapping> 
 
+     <!--? Definición del servlet Venta -->
+  <servlet> 
+    <servlet-name>Venta</servlet-name> 
+    <servlet-class>Venta</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Venta</servlet-name> 
+    <url-pattern>/Venta</url-pattern>
+  </servlet-mapping>
+
+       <!--? Definición del servlet Prenda -->
+  <servlet> 
+    <servlet-name>Prenda</servlet-name> 
+    <servlet-class>Prenda</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Prenda</servlet-name> 
+    <url-pattern>/Prenda</url-pattern>  
+  </servlet-mapping> 
+
+         <!--? Definición del servlet Color -->
+  <servlet> 
+    <servlet-name>Color</servlet-name> 
+    <servlet-class>Color</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Color</servlet-name> 
+    <url-pattern>/Color</url-pattern>  
+  </servlet-mapping> 
+
+           <!--? Definición del servlet Metodo De Pago -->
+  <servlet> 
+    <servlet-name>MetodoDePago</servlet-name> 
+    <servlet-class>MetodoDePago</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>MetodoDePago</servlet-name> 
+    <url-pattern>/MetodoDePago</url-pattern>  
+  </servlet-mapping> 
+
+             <!--? Definición del servlet Detalles-->
+  <servlet> 
+    <servlet-name>Detalles</servlet-name> 
+    <servlet-class>Detalles</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Detalles</servlet-name> 
+    <url-pattern>/Detalles</url-pattern>  
+  </servlet-mapping> 
+
+               <!--? Definición del servlet Material-->
+  <servlet> 
+    <servlet-name>Material</servlet-name> 
+    <servlet-class>Material</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Material</servlet-name> 
+    <url-pattern>/Material</url-pattern>  
+  </servlet-mapping> 
 
 </web-app>

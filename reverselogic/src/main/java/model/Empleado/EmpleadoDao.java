@@ -5,12 +5,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.servlet.http.HttpSession;
-
 import controller.*;
 import model.Conexion;
-import model.Producto.ProductoVo;
+
 public class EmpleadoDao {
 
     

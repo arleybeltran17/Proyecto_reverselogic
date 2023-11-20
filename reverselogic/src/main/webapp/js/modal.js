@@ -1,3 +1,4 @@
+//? -------------------------|| Modal Actualizacion Productos ||-------------------------
 let updateButtons = document.querySelectorAll(".btncal");
 
 updateButtons.forEach(function(button) {

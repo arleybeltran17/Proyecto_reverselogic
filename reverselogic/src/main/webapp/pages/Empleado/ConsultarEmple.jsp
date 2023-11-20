@@ -110,7 +110,6 @@ if (mostrarModal != null && mostrarModal) {
 <br><br>
 <form action="Empleado" method="post">
 
-
     <br>
     <br>
     <div class="contlabel">

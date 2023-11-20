@@ -21,7 +21,7 @@
     <div id="InputEmail">
         <label >E-mail </label>
         <br>
-        <input type="email" name="inputUsername" id="inputUsername" placeholder="Ingrese el nombre del ususario" required min="5" >
+        <input type="email" name="inputUsername" id="inputUsername" placeholder="Ingrese el nombre del usuario" required min="5" >
         <div class="feedback"></div>
     </div>
     <br><br>

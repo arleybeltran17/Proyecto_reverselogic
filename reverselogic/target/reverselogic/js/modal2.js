@@ -1,8 +1,9 @@
+//? -------------------------|| Modal Actualizacion Clientes ||-------------------------
 let updateButtons = document.querySelectorAll(".btncal");
 
 updateButtons.forEach(function (button) {
     button.addEventListener("click", function () {
-        console.log("Clic en el botón de actualización");
+    console.log("Clic en el botón de actualización");
     let modal = document.getElementById("myModal1");
     let form = modal.querySelector("form");
 

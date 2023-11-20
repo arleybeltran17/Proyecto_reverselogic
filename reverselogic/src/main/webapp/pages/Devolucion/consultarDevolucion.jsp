@@ -96,14 +96,17 @@
             <h2>Actualizar Devolucion</h2>
             <form action="Devolucion" method="post">
         
-            <label for="Devo_Id"> ID Empleado</label>
-            <input type="text" name="Devo_Id" id="Devo_Id"  placeholder="Ingrese El Id Del Empleado">
+            <label for="Devo_Id"> ID Devolucion</label>
+            <input type="text" name="Devo_Id" id="Devo_Id"  placeholder="Ingrese El Id De La Devolucion">
     
             <label for="Devo_Cant_Preducto"> Cantidad De Producto</label>
             <input type="text" name="Devo_Cant_Preducto" id="Devo_Cant_Preducto" placeholder="Ingrese La Cantidad Del Producto">
+
+            <label for="Devo_Razon"> Razon</label>
+            <input type="text" name="Devo_Razon" id="Devo_Razon">
     
             <label for="Devo_Fecha"> Fecha</label>
-            <input type="Date" name="Devo_Fecha" id="Devo_Fecha" required>
+            <input type="Date" name="Devo_Fecha" id="Devo_Fecha">
 
             <label for="Emple_id"> ID Empleado</label>
             <input type="text" name="Emple_id" id="Emple_id"  placeholder="Ingrese El Id Del Empleado">

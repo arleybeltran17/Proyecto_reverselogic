@@ -1,3 +1,4 @@
+//? -------------------------|| Modal Actualizacion Empleados ||-------------------------
 let updateButtons = document.querySelectorAll(".btncal");
 
 updateButtons.forEach(function(button) {

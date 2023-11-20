@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/registrarEmple.css">
 
-    <title>Empleado</title>
+    <title>Registro De Productos</title>
 </head>
 <body>
     <body>
@@ -30,7 +30,7 @@
                 </ul>
             </div>
             </header>
-            <h1>Registrar Empleado</h1>
+            <h1>Registrar Productos</h1>
             <div class="cont12">
            
             <form action="ReverseLogic" method="post">

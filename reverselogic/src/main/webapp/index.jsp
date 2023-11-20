@@ -22,7 +22,7 @@
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
                             <li> <a href="#"><button class="btnPerfil">Perfil</button></a></li>
-                            <li><a href="#"><button class="btnSalir">Salir</button> </a></li>
+                            <li><a href="Longin.jsp"><button class="btnSalir">Salir</button> </a></li>
                         </ul>
                     </li>
                 </ul>
@@ -39,7 +39,7 @@
                                 <h2>Venta</h2>
                             </div>
                                 <div class="btnContainer">
-                                   <a href="pages/Venta/venta.jsp"> <button class="">Ingresar</button></a>
+                                   <a href="Venta?enviar=venta"> <button class="">Ingresar</button></a>
                                 </div>
                             
                         </div>
@@ -84,7 +84,7 @@
                             <div class="detalle">
                                 <h2>Prenda</h2>
                                 <div class="btnContainer">
-                                    <a href="pages/Prenda/prenda.jsp"> <button class="btnEliminar">Ingresar</button></a>
+                                    <a href="Prenda?enviar=prenda"> <button class="btnEliminar">Ingresar</button></a>
 
                                 </div>
                             </div>
@@ -131,6 +131,19 @@
                                 <h2>Usuario</h2>
                                 <div class="btnContainer">
                                     <a href="Usuario?enviar=usuario"> <button class="btnUsuario">Ingresar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="prendas">
+                        <div class="imgChaqueta">
+                            <img src="img/detallitos.png" alt="" width="200px" height="110">
+                            <div class="detalle">
+                                <h2>Detalles De Prenda</h2>
+                                <div class="btnContainer">
+                                    <a href="Detalles?enviar=detalle"> <button class="btnDetalle">Ingresar</button></a>
                                 </div>
                             </div>
                         </div>
