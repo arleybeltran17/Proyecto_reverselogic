@@ -37,7 +37,7 @@
                         <h2>Registrar</h2>
                     </div>
                         <div class="btnContainer">
-                           <a href="Venta?enviar=registerVent"> <button class="">Ingresar</button></a>
+                           <a href="Venta?enviar=RegistrarVenta"> <button class="">Ingresar</button></a>
                         </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                     <div class="detalle">
                         <h2>Consultar</h2>
                         <div class="btnContainer">
-                            <a href="Venta?enviar=ConsultarVent"> <button class="btnEliminar">Ingresar</button></a>
+                            <a href="Venta?enviar=ConsultarVentas"> <button class="btnEliminar">Ingresar</button></a>
 
                         </div>
                     </div>

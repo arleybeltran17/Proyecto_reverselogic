@@ -39,12 +39,14 @@ public class UsuarioDao {
             ps.setInt(4, Usuario.getEmple_Id());
 
             r = ps.executeUpdate();
+            System.out.println(ps);
             ps.close();
         } catch (SQLException e) {
-            // Manejar la excepción adecuadamente, por ejemplo, registrándola o lanzándola.
-            e.printStackTrace();
-            r = -1; // Indicar un error en el resultado
+        e.printStackTrace();
+        r = -1; // Indicar un error en el resultado
+        throw e; // Lanzar la excepción para ser manejada en el método que invoca a registrarUsu
         }
+
 
         return r;
     }

@@ -153,4 +153,48 @@
     <url-pattern>/Reportes</url-pattern>  
   </servlet-mapping> 
 
+                   <!--? Definición del servlet PrendasEmple -->
+  <servlet> 
+    <servlet-name>PrendasEmple</servlet-name> 
+    <servlet-class>PrendasEmple</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>PrendasEmple</servlet-name> 
+    <url-pattern>/PrendasEmple</url-pattern>  
+  </servlet-mapping>
+
+                     <!--? Definición del servlet DevolucionesEmple -->
+  <servlet> 
+    <servlet-name>DevolucionesEmple</servlet-name> 
+    <servlet-class>DevolucionesEmple</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>DevolucionesEmple</servlet-name> 
+    <url-pattern>/DevolucionesEmple</url-pattern>  
+  </servlet-mapping>
+  
+                       <!--? Definición del servlet ProductoEmple -->
+  <servlet> 
+    <servlet-name>ProductoEmple</servlet-name> 
+    <servlet-class>ProductoEmple</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>ProductoEmple</servlet-name> 
+    <url-pattern>/ProductoEmple</url-pattern>  
+  </servlet-mapping>
+    
+                       <!--? Definición del servlet ventaEmple -->
+  <servlet> 
+    <servlet-name>VentaEmple</servlet-name> 
+    <servlet-class>VentaEmple</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>VentaEmple</servlet-name> 
+    <url-pattern>/VentaEmple</url-pattern>  
+  </servlet-mapping>
+
 </web-app>

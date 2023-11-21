@@ -35,7 +35,7 @@
                                 <h2>Venta</h2>
                             </div>
                                 <div class="btnContainer">
-                                   <a href="venta.jsp"> <button class="">Ingresar</button></a>
+                                   <a href="Ventas?enviar=ventaEmple"> <button class="">Ingresar</button></a>
                                 </div>
                             
                         </div>
@@ -49,7 +49,7 @@
                             <div class="detalle">
                                 <h2>Producto</h2>
                                 <div class="btnContainer">
-                                    <a href="producto.jsp"> <button class="btnEliminar">Ingresar</button></a>
+                                    <a href="Productos?enviar=productoEmple"> <button class="btnEliminar">Ingresar</button></a>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                             <div class="detalle">
                                 <h2>Devolución</h2>
                                 <div class="btnContainer">
-                                    <a href="devolucion.jsp"> <button class="btnEliminar">Ingresar</button></a>
+                                    <a href="Devoluciones?enviar=DevolucionEmple"> <button class="btnEliminar">Ingresar</button></a>
 
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                             <div class="detalle">
                                 <h2>Prenda</h2>
                                 <div class="btnContainer">
-                                    <a href="prenda.jsp"> <button class="btnEliminar">Ingresar</button></a>
+                                    <a href="Prendas?enviar=prendasEmple"> <button class="btnEliminar">Ingresar</button></a>
 
                                 </div>
                             </div>

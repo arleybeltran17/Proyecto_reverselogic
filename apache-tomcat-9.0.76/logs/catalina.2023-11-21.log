@@ -1,0 +1,327 @@
+21-Nov-2023 00:18:54.287 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 00:18:54.332 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [reverselogic] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+21-Nov-2023 00:18:54.336 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [reverselogic] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 00:18:54.342 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 00:18:54.346 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 00:18:54.349 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 00:18:58.194 INFORMACIÓN [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 00:18:58.996 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 00:19:34.080 INFORMACIÓN [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 00:19:34.310 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [35.312] ms
+21-Nov-2023 00:39:26.835 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 00:39:27.005 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [reverselogic] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+21-Nov-2023 00:39:27.040 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [reverselogic] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 00:39:27.045 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 00:39:27.045 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 00:39:27.049 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 00:39:29.650 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 00:39:31.338 INFORMACIÓN [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 00:40:00.008 INFORMACIÓN [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 00:40:00.279 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [30.628] ms
+21-Nov-2023 01:00:28.559 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 01:00:29.442 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [reverselogic] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+21-Nov-2023 01:00:29.691 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [reverselogic] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:00:29.797 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 01:00:29.798 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 01:00:29.811 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 01:00:32.788 INFORMACIÓN [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:00:36.189 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 01:01:06.402 INFORMACIÓN [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 01:01:06.595 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [30.405] ms
+21-Nov-2023 01:09:02.890 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 01:09:05.144 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [reverselogic] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+21-Nov-2023 01:09:05.301 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [reverselogic] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:09:05.337 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 01:09:05.341 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 01:09:05.345 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 01:09:07.196 INFORMACIÓN [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:09:58.406 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 01:10:45.154 INFORMACIÓN [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 01:10:45.300 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [46.865] ms
+21-Nov-2023 01:10:55.321 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 01:10:55.329 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [reverselogic] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+21-Nov-2023 01:10:55.330 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [reverselogic] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:10:55.331 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 01:10:55.332 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 01:10:55.332 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 01:10:57.935 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 01:10:58.657 INFORMACIÓN [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:11:13.286 INFORMACIÓN [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 01:11:13.370 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [15.434] ms
+21-Nov-2023 01:17:00.180 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 01:17:00.187 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 01:17:00.188 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 01:17:00.188 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 01:17:24.525 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 01:18:18.441 INFORMACIÓN [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 01:18:18.555 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [54.031] ms
+21-Nov-2023 01:31:21.127 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 01:31:21.137 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [reverselogic] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+21-Nov-2023 01:31:29.800 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [reverselogic] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:31:29.811 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 01:31:29.820 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 01:31:29.829 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 01:31:30.100 INFORMACIÓN [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:31:40.220 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 01:32:04.104 INFORMACIÓN [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 01:32:04.190 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [23.969] ms
+21-Nov-2023 01:44:09.499 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 01:44:09.515 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [reverselogic] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+21-Nov-2023 01:44:09.516 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [reverselogic] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:44:09.517 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 01:44:09.518 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 01:44:09.518 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 01:44:10.981 INFORMACIÓN [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:44:11.306 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 01:44:26.333 INFORMACIÓN [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 01:44:26.394 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [15.088] ms
+21-Nov-2023 01:58:32.749 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 01:58:32.759 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [reverselogic] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+21-Nov-2023 01:58:32.760 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [reverselogic] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:58:32.760 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 01:58:32.761 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 01:58:36.244 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 01:58:40.084 INFORMACIÓN [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load [].  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1432)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1057)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 01:58:53.188 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 01:59:12.471 INFORMACIÓN [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 01:59:12.549 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [19.360] ms
+21-Nov-2023 02:01:08.842 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 02:01:08.931 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 02:01:08.933 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 02:01:08.936 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 02:01:12.549 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 02:01:12.778 GRAVE [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.beforeStart Excepción arreglando docBase: [/reverselogic]
+	java.util.zip.ZipException: zip END header not found
+		at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1469)
+		at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+		at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:347)
+		at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+		at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+		at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:191)
+		at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:131)
+		at java.base/sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:92)
+		at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:129)
+		at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:821)
+		at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:960)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:182)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:662)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1023)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1910)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:824)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1666)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1297)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1279)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+21-Nov-2023 02:01:12.920 GRAVE [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Error durante el despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:662)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1023)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1910)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:824)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1666)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1297)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1279)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: org.apache.catalina.LifecycleException: Fallo al iniciar el componente [org.apache.catalina.webresources.WarResourceSet@35630d4e]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:139)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:715)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4607)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4740)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 24 more
+	Caused by: java.lang.IllegalArgumentException: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:141)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		... 31 more
+	Caused by: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:209)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:257)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:138)
+		... 32 more
+	Caused by: java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
+		at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:206)
+		... 34 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1469)
+		at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+		at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:347)
+		... 39 more
+21-Nov-2023 02:01:12.971 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [465] ms
+21-Nov-2023 02:04:59.419 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 02:05:01.230 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 02:06:22.699 INFORMACIÓN [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 02:06:22.764 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [81.533] ms
+21-Nov-2023 02:06:32.790 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+21-Nov-2023 02:06:32.806 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+21-Nov-2023 02:06:32.807 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+21-Nov-2023 02:06:32.808 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+21-Nov-2023 02:06:35.549 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+21-Nov-2023 02:06:54.311 INFORMACIÓN [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+21-Nov-2023 02:06:54.380 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [18.830] ms

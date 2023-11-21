@@ -3244,3 +3244,173 @@
 20-Nov-2023 19:39:30.513 INFORMACIÓN [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
 20-Nov-2023 19:39:30.833 ADVERTENCIA [Catalina-utility-2] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [105] milliseconds.
 20-Nov-2023 19:39:31.042 INFORMACIÓN [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\USUARIO\OneDrive\Escritorio\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [36.672] ms
+20-Nov-2023 23:45:06.045 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.76
+20-Nov-2023 23:45:06.061 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jun 5 2023 07:17:04 UTC
+20-Nov-2023 23:45:06.062 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.76.0
+20-Nov-2023 23:45:06.062 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 23:45:06.063 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 23:45:06.063 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 23:45:06.064 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Users\Familia\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.6.10-hotspot
+20-Nov-2023 23:45:06.064 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.6+10
+20-Nov-2023 23:45:06.065 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 23:45:06.065 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76
+20-Nov-2023 23:45:06.067 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76
+20-Nov-2023 23:45:06.317 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=c:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76/conf/logging.properties
+20-Nov-2023 23:45:06.326 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 23:45:06.327 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+20-Nov-2023 23:45:06.328 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Nov-2023 23:45:06.328 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+20-Nov-2023 23:45:06.329 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=c:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76
+20-Nov-2023 23:45:06.329 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=c:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76
+20-Nov-2023 23:45:06.330 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=c:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76/temp
+20-Nov-2023 23:45:06.399 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Users\Familia\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.6.10-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Familia\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.6.10-hotspot\bin;C:\Users\Familia\AppData\Local\Microsoft\WindowsApps;C:\Users\Familia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Familia\AppData\Local\JetBrains\IntelliJ IDEA 2023.1\bin;;C:\Users\Familia\AppData\Roaming\npm;C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-maven-3.9.5\bin;;.]
+20-Nov-2023 23:45:08.354 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 23:45:08.610 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [3511] milliseconds
+20-Nov-2023 23:45:08.978 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 23:45:08.979 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.76]
+20-Nov-2023 23:45:09.161 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\proyect.war] de la aplicación web
+20-Nov-2023 23:45:09.475 INFORMACIÓN [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\proyect] was found with a last modified time that did not match the associated WAR. It will be deleted.
+20-Nov-2023 23:45:17.621 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 23:45:18.252 ADVERTENCIA [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [364] milliseconds.
+20-Nov-2023 23:45:18.440 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\proyect.war] has finished in [9.278] ms
+20-Nov-2023 23:45:18.531 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+20-Nov-2023 23:45:20.549 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 23:45:20.563 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [2.031] ms
+20-Nov-2023 23:45:20.565 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\docs] de la aplicación web
+20-Nov-2023 23:45:21.000 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\docs] has finished in [435] ms
+20-Nov-2023 23:45:21.002 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\examples] de la aplicación web
+20-Nov-2023 23:45:27.156 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\examples] has finished in [6.153] ms
+20-Nov-2023 23:45:27.161 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\host-manager] de la aplicación web
+20-Nov-2023 23:45:27.557 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\host-manager] has finished in [396] ms
+20-Nov-2023 23:45:27.558 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\manager] de la aplicación web
+20-Nov-2023 23:45:28.083 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\manager] has finished in [523] ms
+20-Nov-2023 23:45:28.086 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\ROOT] de la aplicación web
+20-Nov-2023 23:45:28.403 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\ROOT] has finished in [316] ms
+20-Nov-2023 23:45:28.404 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\src] de la aplicación web
+20-Nov-2023 23:45:28.651 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\src] has finished in [246] ms
+20-Nov-2023 23:45:28.652 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\target] de la aplicación web
+20-Nov-2023 23:45:28.808 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\target] has finished in [156] ms
+20-Nov-2023 23:45:28.863 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 23:45:29.399 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [20788] milliseconds
+20-Nov-2023 23:47:03.876 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+20-Nov-2023 23:47:03.916 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches When running on Java 9 or later you need to add "--add-opens=java.base/java.io=ALL-UNNAMED" to the JVM command line arguments to enable ObjectStream cache memory leak protection. Alternatively, you can suppress this warning by disabling ObjectStream class cache memory leak protection.
+20-Nov-2023 23:47:03.921 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalsForLeaks When running on Java 9 or later you need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+20-Nov-2023 23:47:03.929 ADVERTENCIA [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesRmiTargets When running on Java 9 or later you need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+20-Nov-2023 23:47:04.033 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+20-Nov-2023 23:47:04.090 GRAVE [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.beforeStart Excepción arreglando docBase: [/reverselogic]
+	java.util.zip.ZipException: zip END header not found
+		at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1469)
+		at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+		at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:347)
+		at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+		at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+		at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:191)
+		at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:131)
+		at java.base/sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:92)
+		at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:129)
+		at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:821)
+		at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:960)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:182)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:662)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1023)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1910)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:824)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1666)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1297)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1279)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 23:47:04.192 GRAVE [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Error durante el despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:662)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1023)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1910)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:824)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1666)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:314)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1098)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1297)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1301)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1279)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: org.apache.catalina.LifecycleException: Fallo al iniciar el componente [org.apache.catalina.webresources.WarResourceSet@dc2272c]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:139)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:715)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4607)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4740)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 24 more
+	Caused by: java.lang.IllegalArgumentException: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:141)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		... 31 more
+	Caused by: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:209)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:257)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:138)
+		... 32 more
+	Caused by: java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
+		at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:206)
+		... 34 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1469)
+		at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+		at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:347)
+		... 39 more
+20-Nov-2023 23:47:04.311 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [276] ms
+20-Nov-2023 23:50:03.611 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/reverselogic]
+20-Nov-2023 23:50:03.669 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] de la aplicación web
+20-Nov-2023 23:50:28.360 INFORMACIÓN [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 23:50:28.604 INFORMACIÓN [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Familia\Desktop\Proyecto_reverselogic\apache-tomcat-9.0.76\webapps\reverselogic.war] has finished in [24.935] ms

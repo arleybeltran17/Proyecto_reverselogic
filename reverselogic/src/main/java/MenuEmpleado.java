@@ -26,7 +26,7 @@ public class MenuEmpleado extends HttpServlet{
         System.out.println("Entró al DoGet");
         String enviar=req.getParameter("enviar");
         switch(enviar){
-            case "menu-emple":{
+            case "":{
             req.getRequestDispatcher("pages/CrudEmpleado/menuEmp.jsp").forward(req, resp);
             System.out.println("Se Ha Redireccionado Al Menu De Detalles");
             break;

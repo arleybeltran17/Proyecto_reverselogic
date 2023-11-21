@@ -50,10 +50,10 @@ public class Reportes extends HttpServlet {
         }
     
     if (ventas != null && !ventas.isEmpty()) {
-        PdfPTable table = new PdfPTable(5);
+        PdfPTable table = new PdfPTable(7);
         table.getDefaultCell().setPadding(8);
         
-
+        table.addCell(new Phrase("ID Venta"));
         table.addCell(new Phrase("Cantidad De La Venta"));
         table.addCell(new Phrase("Fecha De La Venta"));
         table.addCell(new Phrase("Usuario ID"));
@@ -63,6 +63,7 @@ public class Reportes extends HttpServlet {
     
 
         for(VentaVo venta: ventas){
+            String IdVentaStr=String.valueOf(venta.getVent_Id());
             String CantidadVentaSTR= String.valueOf(venta.getVent_Cantidad());
             String FechaVentaSTR= String.valueOf(venta.getVent_Fecha());
             String UsuarioIdSTR= String.valueOf(venta.getUsu_Id());
@@ -70,6 +71,7 @@ public class Reportes extends HttpServlet {
             String MetodoIdSTR = String.valueOf(venta.getMetod_Id());
             String PrendaIdSTR = String.valueOf(venta.getPrend_Id());
 
+            table.addCell(IdVentaStr);
             table.addCell(CantidadVentaSTR);
             table.addCell(FechaVentaSTR);
             table.addCell(UsuarioIdSTR);

@@ -63,7 +63,7 @@
                                 <p id="Mate_Id_<%= material.getMate_Id() %>" class="cardMate_Id" ><%= material.getMate_Id() %></id></p>
                                  <br>
                                 <p class="card--subtittle">Nombre Material</p>
-                                <p id="Mate_Nombre<%= material.getMate_Id() %>" class="cardMateNombre" ><%= material.getMate_Nombre() %></p>
+                                <p id="Mate_Nombre_<%= material.getMate_Id() %>" class="cardMateNombre" ><%= material.getMate_Nombre() %></p>
                                 <br>
                                 <form action="<%= request.getContextPath() %>/Material" method="post">
                                     <input type="hidden" name="enviar" value="eliminarMaterial">

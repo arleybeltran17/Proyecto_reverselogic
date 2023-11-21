@@ -4,27 +4,30 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Entro.........")
         console.log("Accediendo A Los Valores.........")
     
-    updateButtons.forEach(function(button) {
-        button.addEventListener("click", function(e) {
-            e.preventDefault()
-            console.log("Listo :3.........")
-            let modal = document.getElementById("myModal1");
-            let form = modal.querySelector("form");
-   
-            console.log("Obteniendo Valores De Cards :3.........")
-            // Obtener los valores ingresados por el usuario en la tarjeta
-            let MateId = button.getAttribute("data-mate-id");
-            let MateNombre = button.parentElement.querySelector(".cardMateNombre").textContent;
-    
-            // Llenar los campos en la ventana modal con los valores obtenidos
-            form.elements.Mate_Id.value = MateId;
-            form.elements.Mate_Nombre.value = MateNombre;
-            console.log("Obtenidos Correctamente :3.........")
-    
-            // Mostrar la ventana modal
-            modal.style.display = "block";
-        });
-    });
+        updateButtons.forEach((button) => {
+            button.addEventListener("click", (e) => {
+              e.preventDefault();
+          
+              const modal = document.getElementById("myModal1");
+              const form = modal.querySelector("form");
+          
+              const cardElement = button.parentElement.parentElement;
+              const MateId = cardElement.querySelector(".cardMate_Id").textContent;
+          
+              // Comprobar si existe el elemento .cardMateNombre
+              let MateNombreElement = cardElement.querySelector(".cardMateNombre");
+              if (MateNombreElement) {
+                const MateNombre = MateNombreElement.textContent;
+          
+                form.elements.Mate_Id.value = MateId;
+                form.elements.Mate_Nombre.value = MateNombre;
+              } else {
+                console.error("El elemento .cardMateNombre no existe");
+              }
+          
+              modal.style.display = "block";
+            });
+          });
     
     // Aquí, getUserById() es una función ficticia, debes implementarla para obtener los datos del usuario por su ID
     function getMaterialById(MateId, callback) {

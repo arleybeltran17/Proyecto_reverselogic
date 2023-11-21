@@ -16,7 +16,10 @@ model\Devolucion\DevolucionDao.class
 ReverseLogic.class
 model\Venta\VentaVo.class
 model\Devolucion\DevolucionVo.class
+PrendasEmple.class
 model\Producto\ProductoVo.class
+VentaEmple.class
+DevolucionEmple.class
 Material.class
 model\Empleado\EmpleadoVo.class
 Venta.class
@@ -28,6 +31,7 @@ Empleado.class
 Reportes.class
 CerrarSesion.class
 model\Cliente\ClienteDao.class
+ProductoEmple.class
 model\MetodoDePago\MetodoDePagoVo.class
 model\Prenda\PrendaVo.class
 model\Conexion.class
