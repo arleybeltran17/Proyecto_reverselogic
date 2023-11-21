@@ -9,7 +9,7 @@ public class Conexion {
     
     private static final String usuario = "root";
     
-    private static final String clave = "12345678";
+    private static final String clave = "";
     
     private static Connection con;
     

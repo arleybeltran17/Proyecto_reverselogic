@@ -60,8 +60,8 @@
         </div>
         <br><br>
         <div class="contlabel5">
-        <input type="text" name="Metod_Id" id="getMetod_Id" required>
-        <label for="getMetod_Id"> Id Del Metodo De Pago</label>
+        <input type="text" name="Metod_Id" id="Metod_Id" required>
+        <label for="Metod_Id"> Id Del Metodo De Pago</label>
         </div>
         <br><br>
         <div class="contlabel6">
