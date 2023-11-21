@@ -98,18 +98,23 @@ public class Usuario extends HttpServlet{
 
     //? ADD - REGISTER+
     private void add(HttpServletRequest req, HttpServletResponse resp) {
+        
 
         if(req.getParameter("Usu_Nombre")!=null){  
-            r.setUsu_Nombre( req.getParameter("Usu_Nombre")); 
+            r.setUsu_Nombre( req.getParameter("Usu_Nombre"));
+            System.out.println("Registro Nombre");
         }
         if(req.getParameter("Usu_Rol")!=null){
             r.setUsu_Rol(Integer.parseInt(req.getParameter("Usu_Rol"))); 
+            System.out.println("Registro Rol");
         }
         if(req.getParameter("Usu_Password")!=null){
             r.setUsu_Password(req.getParameter("Usu_Password"));
+            System.out.println("Registro Password");
             
         }if(req.getParameter("Emple_Id")!=null){
             r.setEmple_Id(Integer.parseInt(req.getParameter("Emple_Id"))); 
+            System.out.println("Registro ID Emple");
         }
         else{
             System.out.println("Error Al Registrar Datos");
@@ -127,7 +132,9 @@ public class Usuario extends HttpServlet{
     }
     //? UPDATE - ACTUALIZAR
     private void actualizar(HttpServletRequest req, HttpServletResponse resp) {
-
+        if(req.getParameter("Usu_Id")!=null){
+            r.setUsu_Id(Integer.parseInt(req.getParameter("Usu_Id"))); 
+        }
         if(req.getParameter("Usu_Nombre")!=null){
             r.setUsu_Nombre( req.getParameter("Usu_Nombre")); 
         }
@@ -140,8 +147,6 @@ public class Usuario extends HttpServlet{
         }if(req.getParameter("Emple_Id")!=null){
             r.setEmple_Id(Integer.parseInt(req.getParameter("Emple_Id"))); 
         }
-
-        
         try {
             rd.actualizarUsu(r);
             System.out.println("Registro actualizado correctamente");

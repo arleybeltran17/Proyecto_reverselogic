@@ -37,7 +37,7 @@ public class Material extends HttpServlet{
             System.out.println("Se Ha Redireccionado Al Register");
             break;
 
-            case "updateMaterial":
+            case "updateMate":
             req.getRequestDispatcher("update.jsp").forward(req, resp);
             System.out.println("Se Ha Redireccionado Al Update");
             break;
@@ -67,7 +67,7 @@ public class Material extends HttpServlet{
                 add(req, resp);
                 break;
     
-            case "updateMaterial":
+            case "updateMate":
                 System.out.println("Acabas de entrar al caso 'update'");
                 actualizar(req, resp);
                 break;
@@ -125,7 +125,7 @@ public class Material extends HttpServlet{
             System.out.println("Registro actualizado correctamente");
     
             //? Redireccionamiento preventivo.       
-            req.getRequestDispatcher("pages/Material/consultarMaterial.jsp").forward(req, resp);
+            req.getRequestDispatcher("pages/Detalles/Material/consultarMaterial.jsp").forward(req, resp);
 
         } catch (Exception e) {
             System.out.println("Error en la actualizacion del registro "+e.getMessage().toString());

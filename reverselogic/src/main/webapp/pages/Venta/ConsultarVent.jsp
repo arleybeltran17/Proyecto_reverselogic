@@ -24,7 +24,8 @@
                 <a href="#"><img class="imgbtn" src="<%= request.getContextPath() %>/img/usuario-de-perfil.png" alt="Usuario"></a>
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
-                    <li><a href="index.jsp"><button>Menú</button> </a></li>
+                        <li><a href="Venta?enviar=venta"><button>Volver</button> </a></li>
+                        <li><a href="index.jsp"><button>Menu</button> </a></li>
                     <li> 
                         <form action="CerrarSesion" method="post">
                             <input type="submit" class="btnSalir" value="Salir">

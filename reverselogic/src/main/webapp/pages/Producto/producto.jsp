@@ -21,10 +21,10 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href=""><button>Menú</button> </a></li>
-                            <li> 
-                                <form action="CerrarSesion" method="post">
-                                    <input type="submit" class="btnSalir" value="Salir">
-                                </form>
+                            <li>
+                                <form action="LogoutServlet" method="post">
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
                             </li> 
                         </ul>
                     </li>

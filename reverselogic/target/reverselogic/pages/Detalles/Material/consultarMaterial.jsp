@@ -24,12 +24,13 @@
                 <a href="#"><img class="imgbtn" src="<%= request.getContextPath() %>/img/usuario-de-perfil.png" alt="Usuario"></a>
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
-                    <li><a href="Material?enviar=Material"><button>Menú</button> </a></li>
-                    <li> 
-                        <form action="CerrarSesion" method="post">
-                            <input type="submit" class="btnSalir" value="Salir">
-                        </form>
-                    </li> 
+                        <li><a href="Material?enviar=material"><button>Volver</button> </a></li>
+                        <li><a href="index.jsp"><button>Menu</button> </a></li>
+                    <li>
+                                <form action="LogoutServlet" method="post">
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
+                            </li>  
                 </ul>
             </li>
         </ul>
@@ -60,7 +61,7 @@
                             </div>
                             <div class="card--info">
                                 <p class="card--subtittle">Id Material</p>
-                                <p id="Mate_Id_<%= material.getMate_Id() %>" class="cardMate_Id" ><%= material.getMate_Id() %></id></p>
+                                <p id="Mate_Id_<%= material.getMate_Id() %>" value="<%= material.getMate_Id() %>" class="cardMate_Id" ><%= material.getMate_Id() %></id></p>
                                  <br>
                                 <p class="card--subtittle">Nombre Material</p>
                                 <p id="Mate_Nombre_<%= material.getMate_Id() %>" class="cardMateNombre" ><%= material.getMate_Nombre() %></p>
@@ -71,7 +72,7 @@
                                     <button type="submit" class="btn-delete">Eliminar</button><br>
                                 </form>
                                 <br>
-                            <button class="btncal" data-mate-id="<%= material.getMate_Id() %>">Actualizar</button>
+                            <button class="btncal" data-mate-id="<%= material.getMate_Id() %>" value="<%= material.getMate_Id() %>">Actualizar</button>
                             </div>
                             
                         </div>

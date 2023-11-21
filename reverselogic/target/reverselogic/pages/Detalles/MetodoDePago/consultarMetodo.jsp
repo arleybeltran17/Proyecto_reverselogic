@@ -24,12 +24,13 @@
                 <a href="#"><img class="imgbtn" src="<%= request.getContextPath() %>/img/usuario-de-perfil.png" alt="Usuario"></a>
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
-                    <li><a href="MetodoDePago?enviar=metodo"><button>Menú</button> </a></li>
-                    <li> 
-                        <form action="CerrarSesion" method="post">
-                            <input type="submit" class="btnSalir" value="Salir">
-                        </form>
-                    </li> 
+                        <li><a href="MetodoDePago?enviar=metodo"><button>Volver</button> </a></li>
+                        <li><a href="index.jsp"><button>Menu</button> </a></li>
+                    <li>
+                                <form action="LogoutServlet" method="post">
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
+                            </li> 
                 </ul>
             </li>
         </ul>
