@@ -21,8 +21,12 @@
                     <li class="submenu">
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
-                            <li> <a href="#"><button class="btnPerfil">Perfil</button></a></li>
-                            <li><a href="Longin.jsp"><button class="btnSalir">Salir</button> </a></li>
+                            <li><a href="#"><button>Perfil</button></a></li>
+                            <li>
+                                <form action="LogoutServlet" method="post">
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
+                            </li>                          
                         </ul>
                     </li>
                 </ul>

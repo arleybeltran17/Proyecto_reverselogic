@@ -20,7 +20,11 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href="index.jsp"><button>Menu</button> </a></li>
-                            <li><a href="Login.jsp"><button>Salir</button> </a></li>
+                            <li> 
+                                <form action="CerrarSesion" method="post">
+                                    <input type="submit" class="btnSalir" value="Salir">
+                                </form>
+                            </li> 
                         </ul>
                     </li>
                 </ul>
@@ -57,6 +61,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="cards">
+        <div class="prendas">
+            <div class="imgChaqueta">
+                <img src="img/consultarUsu.png" alt="" width="200px" height="150px">
+                <div class="detalle">
+                    <h2>Reporte De Venta</h2>
+                    <div class="btnContainer">
+                        <a href="Reportes?enviar=reporteVenta"> <button class="btnEliminar">Generar Reporte</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
     <footer>
         <div class="media">

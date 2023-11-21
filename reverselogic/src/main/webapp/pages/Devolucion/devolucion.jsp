@@ -21,7 +21,11 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href="/Crud/reverselogic/reverselogic/src/main/webapp/index.jsp"><button>Menú</button> </a></li>
-                            <li><a href="#"><button>Salir</button> </a></li>
+                            <li> 
+                                <form action="CerrarSesion" method="post">
+                                    <input type="submit" class="btnSalir" value="Salir">
+                                </form>
+                            </li> 
                         </ul>
                     </li>
                 </ul>

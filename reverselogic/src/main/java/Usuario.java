@@ -192,33 +192,42 @@ public class Usuario extends HttpServlet{
         }
     }
 
-    private void LoginUser(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String Usu_Nombre = req.getParameter("inputUsername");
-        String Usu_Password = req.getParameter("inputPassword");
-    
-        if (Usu_Nombre != null && !Usu_Nombre.isEmpty() && Usu_Password != null && !Usu_Password.isEmpty()) {
-            try {
-                if (rd.validarLogin(Usu_Nombre, Usu_Password)) {
-                    System.out.println(Usu_Nombre);
-                    System.out.println(Usu_Password);
-                    System.out.println("La Validación Ha Sido Exitosa");
+   private void LoginUser(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    String Usu_Nombre = req.getParameter("inputUsername");
+    String Usu_Password = req.getParameter("inputPassword");
+
+    if (Usu_Nombre != null && !Usu_Nombre.isEmpty() && Usu_Password != null && !Usu_Password.isEmpty()) {
+        try {
+            if (rd.validarLogin(Usu_Nombre, Usu_Password)) {
+                System.out.println(Usu_Nombre);
+                System.out.println(Usu_Password);
+                System.out.println("La Validación Ha Sido Exitosa");
+
+                // Verificar si el usuario es "Juan" (puedes ajustar esto según tus necesidades)
+                if ("Juan".equalsIgnoreCase(Usu_Nombre)) {
+                    // Usuario "Juan" es tratado como administrador y se redirige a index.jsp
                     req.getRequestDispatcher("index.jsp").forward(req, resp);
                 } else {
-                    System.out.println(Usu_Nombre);
-                    System.out.println(Usu_Password);
-                    System.out.println("Usuario y/o Contraseña No Encontrados 1");
-                    req.setAttribute("mensaje", "Usuario y/o Contraseña No Encontrados :(");
-                    req.getRequestDispatcher("Login.jsp").forward(req, resp);
+                    // Otros usuarios son redirigidos a menuEmp.jsp
+                    req.getRequestDispatcher("pages/CrudEmpleado/menuEmp.jsp").forward(req, resp);
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
-                req.setAttribute("mensaje", "Error al iniciar sesión: " + e.getMessage());
+            } else {
+                System.out.println(Usu_Nombre);
+                System.out.println(Usu_Password);
+                System.out.println("Usuario y/o Contraseña No Encontrados");
+                req.setAttribute("mensaje", "Usuario y/o Contraseña No Encontrados :(");
                 req.getRequestDispatcher("Login.jsp").forward(req, resp);
             }
-        } else {
-            req.setAttribute("mensaje", "Usuario y/o Contraseña No Encontrados :(");
-            req.getRequestDispatcher("Login.jsp").forward(req, resp);   
+        } catch (Exception e) {
+            e.printStackTrace();
+            req.setAttribute("mensaje", "Error al iniciar sesión: " + e.getMessage());
+            req.getRequestDispatcher("Login.jsp").forward(req, resp);
         }
+    } else {
+        req.setAttribute("mensaje", "Usuario y/o Contraseña No Encontrados :(");
+        req.getRequestDispatcher("Login.jsp").forward(req, resp);
     }
+}
+
     
 }

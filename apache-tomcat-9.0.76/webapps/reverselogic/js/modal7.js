@@ -20,7 +20,7 @@ updateButtons.forEach(function(button) {
 });
 
 // Aquí, getUserById() es una función ficticia, debes implementarla para obtener los datos del usuario por su ID
-function getProdById(Color_Id, callback) {
+function getColorById(Color_Id, callback) {
     // Aquí, realiza una solicitud AJAX al servidor o cualquier otra lógica para obtener los datos del usuario
     // Supongamos que userData es un objeto que contiene la información del usuario por su ID
     let ColorData = {

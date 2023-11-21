@@ -24,13 +24,17 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li><a href="#"><button>Salir</button> </a></li>
+                            <li> 
+                                <form action="CerrarSesion" method="post">
+                                    <input type="submit" class="btnSalir" value="Salir">
+                                </form>
+                            </li> 
                         </ul>
                     </li>
                 </ul>
             </div>
             </header>
-            <h1>Registrar Empleado</h1>
+            <h1>Registrar Devolucion</h1>
             <div class="cont12">
            
     <form action="Devolucion" method="post">

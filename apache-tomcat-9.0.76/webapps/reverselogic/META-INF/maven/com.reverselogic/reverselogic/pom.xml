@@ -46,6 +46,13 @@
     <artifactId>jstl</artifactId> 
     <version>1.2</version> 
   </dependency> 
+
+  <!-- Dependencia para los reportes -->
+<dependency>
+    <groupId>net.sf.jasperreports</groupId>
+    <artifactId>jasperreports</artifactId>
+    <version>6.20.0</version>
+</dependency>
   </dependencies>
 
   <build>

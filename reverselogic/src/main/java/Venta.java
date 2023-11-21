@@ -93,7 +93,7 @@ public class Venta extends HttpServlet{
 
     //? ADD - REGISTER+
     private void add(HttpServletRequest req, HttpServletResponse resp) {
-
+        System.out.println(req.getParameter("Vent_Cantidad"));        
         if(req.getParameter("Vent_Cantidad")!=null){
             r.setVent_Cantidad(Integer.parseInt(req.getParameter("Vent_Cantidad"))); 
         }
@@ -130,15 +130,11 @@ public class Venta extends HttpServlet{
     }
     //? UPDATE - ACTUALIZAR
     private void actualizar(HttpServletRequest req, HttpServletResponse resp) {
-
-
-        if(req.getParameter("Vent_Id")!=null){
-            r.setVent_Id(Integer.parseInt(req.getParameter("Vent_Id"))); 
-        }
         if(req.getParameter("Vent_Cantidad")!=null){
             r.setVent_Cantidad(Integer.parseInt(req.getParameter("Vent_Cantidad"))); 
         }
-       if(req.getParameter("Vent_Fecha")!=null){
+
+        if(req.getParameter("Vent_Fecha")!=null){
             String Venta_Fecha = req.getParameter("Vent_Fecha");
             Date Fecha_Vent_Parse_Date= Date.valueOf(Venta_Fecha);
             r.setVent_Fecha(Fecha_Vent_Parse_Date);
@@ -154,7 +150,7 @@ public class Venta extends HttpServlet{
         }
         if(req.getParameter("Prend_Id")!=null){
             r.setPrend_Id(Integer.parseInt(req.getParameter("Prend_Id"))); 
-        }
+        } 
         
         try {
             rd.actualizarVent(r);

@@ -3,12 +3,16 @@ document.addEventListener("DOMContentLoaded", function() {
     let updateButtons = document.querySelectorAll(".btncal");
 
     updateButtons.forEach(function(button) {
-        button.addEventListener("click", function() {
-            console.log("Botón clickeado"); 
+        button.addEventListener("click", function(e) {
+            e.preventDefault()
+            console.log("Botón clickeado");
             let modal = document.getElementById("myModal1");
+
+            // Agregar este console.log para verificar si modal es null
+            console.log("Modal element:", modal);
+
             let form = modal.querySelector("form");
-    
-    
+
             // Obtener los valores ingresados por el usuario en la tarjeta
             let Vent_Id = button.getAttribute("data-venta-id");
             let Vent_Cantidad = button.parentElement.querySelector(".cardVent_Cantidad").textContent;

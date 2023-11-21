@@ -24,7 +24,11 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li><a href="#"><button>Salir</button> </a></li>
+                            <li> 
+                                <form action="CerrarSesion" method="post">
+                                    <input type="submit" class="btnSalir" value="Salir">
+                                </form>
+                            </li> 
                         </ul>
                     </li>
                 </ul>
@@ -36,7 +40,7 @@
     <form action="Venta" method="post">
         <br>
         <div class="contlabel">
-        <input type="text" name="Vent_Cantidad" id="Vent_Cantidad" required>
+        <input type="number" name="Vent_Cantidad" id="Vent_Cantidad" required>
         <label for="Vent_Cantidad"> Cantidad de la venta</label>
         </div>
         <br><br>

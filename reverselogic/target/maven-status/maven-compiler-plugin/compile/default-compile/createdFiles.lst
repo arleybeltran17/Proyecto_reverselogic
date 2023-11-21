@@ -1,3 +1,4 @@
+MenuEmpleado.class
 Prenda.class
 Detalles.class
 model\MetodoDePago\MetodoDePagoDao.class
@@ -24,6 +25,8 @@ controller\Usuario.class
 model\Color\ColorVo.class
 Usuario.class
 Empleado.class
+Reportes.class
+CerrarSesion.class
 model\Cliente\ClienteDao.class
 model\MetodoDePago\MetodoDePagoVo.class
 model\Prenda\PrendaVo.class

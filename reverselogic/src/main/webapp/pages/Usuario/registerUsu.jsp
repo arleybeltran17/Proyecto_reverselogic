@@ -21,7 +21,11 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li><a href="#"><button>Salir</button> </a></li>
+                            <li> 
+                                <form action="CerrarSesion" method="post">
+                                    <input type="submit" class="btnSalir" value="Salir">
+                                </form>
+                            </li> 
                         </ul>
                     </li>
                 </ul>
@@ -29,25 +33,37 @@
             </header>
             <h1>Registrar Usuario</h1>
             <div class="cont12">
-            <form action="Usuario" method="post">
+            <form action="Usuario" id="frmValidacion1" method="post">
                 <div class="contlabel">
-                <input type="text" name="Usu_Nombre" id="Usu_Nombre" >
-                <label for="Usu_Nombre">Nombre del Usuario</label>
+                    <div id="Usu_Nombre">
+                        <input type="text" name="Usu_Nombre" id="Usu_Nombre" >
+                        <label for="Usu_Nombre">Nombre del Usuario</label>
+                        <div class="feedback"></div>
+                    </div>
                 </div>
                 <br><br>
                 <div class="contlabel1">
-                <input type="text" name="Usu_Rol" id="Usu_Rol">
-                <label for="Usu_Rol">Rol Usuario</label>
+                    <div id="Usu_Rol">
+                        <input type="text" name="Usu_Rol" id="Usu_Rol">
+                        <label for="Usu_Rol">Rol Usuario</label>
+                        <div class="feedback"></div>
+                    </div>
                 </div>
                 <br><br>
                 <div class="contlabel2">
-                    <input type="password" name="Usu_Password" id="Usu_Password">
-                <label for="Usu_Password">Contraseña Usuario</label> 
+                    <div id="Usu_Password">
+                        <input type="password" name="Usu_Password" id="Usu_Password">
+                        <label for="Usu_Password">Contraseña Usuario</label>
+                        <div class="feedback"></div> 
+                    </div>
                 </div>
-                <br><br>
-                <div class="contlabel3">gv
-                <input type="text" name="Emple_Id" id="Emple_Id">
-                <label for="Emple_Id">Id Empleado</label> 
+                    <br><br>
+                <div class="contlabel3">
+                    <div id="Emple_Id">
+                        <input type="text" name="Emple_Id" id="Emple_Id">
+                        <label for="Emple_Id">Id Empleado</label>
+                        <div class="feedback"></div>
+                    </div>
                 </div>
                 <br><br>
                 <button id="btncal" name="enviar" value="registerUsu">Enviar</button>

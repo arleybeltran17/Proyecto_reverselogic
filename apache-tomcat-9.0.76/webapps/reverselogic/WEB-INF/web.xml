@@ -130,4 +130,27 @@
     <url-pattern>/Material</url-pattern>  
   </servlet-mapping> 
 
+  
+               <!--? Definición del servlet CerrarSesion -->
+  <servlet> 
+    <servlet-name>CerrarSesion</servlet-name> 
+    <servlet-class>CerrarSesion</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>CerrarSesion</servlet-name> 
+    <url-pattern>/CerrarSesion</url-pattern>  
+  </servlet-mapping> 
+
+                 <!--? Definición del servlet Reportes -->
+  <servlet> 
+    <servlet-name>Reportes</servlet-name> 
+    <servlet-class>Reportes</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>Reportes</servlet-name> 
+    <url-pattern>/Reportes</url-pattern>  
+  </servlet-mapping> 
+
 </web-app>

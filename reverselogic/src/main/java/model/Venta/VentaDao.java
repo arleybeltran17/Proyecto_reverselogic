@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.Conexion;
+import model.Empleado.EmpleadoVo;
 import model.Venta.VentaVo;
 
 public class VentaDao {
@@ -40,12 +41,11 @@ public class VentaDao {
             ps.setInt(5, Venta.getMetod_Id());
             ps.setInt(6, Venta.getPrend_Id());
 
-
             r = ps.executeUpdate();
             ps.close();
-        } catch (SQLException e) {
-            // Manejar la excepción adecuadamente, por ejemplo, registrándola o lanzándola.
-            e.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("El Error Es: "+e.getMessage().toString());
+
             r = -1; // Indicar un error en el resultado
         }
 
@@ -62,7 +62,7 @@ public class VentaDao {
             while (rs.next()) {
                 VentaVo r = new VentaVo();
                 r.setVent_Id(rs.getInt("Vent_Id"));
-                r.setVent_Cantidad(rs.getInt("Vent_Cantidad"));
+                r.setVent_Cantidad(rs.getInt("Vent_Cantidad"));              
                 r.setVent_Fecha(rs.getDate("Vent_Fecha"));
                 r.setUsu_Id(rs.getInt("Usu_Id"));
                 r.setClie_Id(rs.getInt("Clie_Id"));
@@ -83,10 +83,10 @@ public class VentaDao {
         return venta;
     }
 
-    //? Actualizar usuario.
-    public int actualizarVent(VentaVo Venta) throws SQLException{
+//? Actualizar usuario.
+public int actualizarVent(VentaVo Venta) throws SQLException{
 
-        sql="update venta set Vent_Cantidad = ?, Vent_Fecha = ?, Usu_Id=?, Clie_Id, Metod_Id, Prend_Id where Vent_Id = ? "; 
+        sql="update venta set Vent_Cantidad = ?, Vent_Fecha = ?, Usu_Id = ?, Clie_Id=?,Metod_Id = ?, Prend_Id = ? where Vent_Id = ? "; 
         System.out.println(sql);
 
         try{
@@ -99,14 +99,15 @@ public class VentaDao {
             ps.setInt(5, Venta.getMetod_Id());
             ps.setInt(6, Venta.getPrend_Id());
             ps.setInt(7, Venta.getVent_Id());
+
             System.out.println(ps);
             ps.executeUpdate(); //Ejecutar sentencia.
             ps.close(); //cerrar sentencia.
-            System.out.println("Se actualizó el registro de Venta correctamente, revisa la base de datos.");
+            System.out.println("Se actualizó el registro del Empleado correctamente, revisa la base de datos.");
 
         }catch(Exception e){
 
-            System.out.println("VentaDao Actualizar dice: Error en la actualizacion del registro "+e.getMessage().toString());
+            System.out.println("EmpleadoDao Actualizar dice: Error en la actualizacion del registro "+e.getMessage().toString());
 
         }
         finally{
@@ -114,6 +115,8 @@ public class VentaDao {
         }
         return r;
     }
+
+
 
     public void eliminarVent(int VentId) throws SQLException {
         sql = "DELETE FROM venta WHERE Vent_Id = ?";

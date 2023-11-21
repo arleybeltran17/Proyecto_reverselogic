@@ -25,7 +25,11 @@
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
                     <li><a href="index.jsp"><button>Menú</button> </a></li>
-                    <li><a href="#"><button>Salir</button> </a></li>
+                    <li> 
+                        <form action="CerrarSesion" method="post">
+                            <input type="submit" class="btnSalir" value="Salir">
+                        </form>
+                    </li> 
                 </ul>
             </li>
         </ul>
@@ -53,7 +57,6 @@
                     <% for (VentaVo venta : ventas ) { %>
                         <div class="card">
                             <div class="card--img">
-                                <img src="img/icons8-usuario-100.png" alt="" width="150px" height="150px">
                             </div>
                             <div class="card--info">
                                 <p class="card--subtittle">Cantidad De La Venta</p>
@@ -117,14 +120,14 @@ if (mostrarModal != null && mostrarModal) {
     <br>
     <br>
     <div class="contlabel">
-        <input type="text" name="Vent_Cantidad" id="Vent_Cantidad">
-        <label for="Vent_Cantidad"> Cntidad de la venta</label>
+        <input type="number" name="Vent_Cantidad" id="Vent_Cantidad" required> 
+        <label for="Vent_Cantidad"> Cantidad de la venta</label>
     </div>
     
     <br>
     <br>
     <div class="contlabel1">
-        <input type="text" name="Vent_Fecha" id="Vent_Fecha" >
+        <input type="Date" name="Vent_Fecha" id="Vent_Fecha" >
         <label for="Vent_Fecha"> Fecha de la venta</label>
     </div>
     

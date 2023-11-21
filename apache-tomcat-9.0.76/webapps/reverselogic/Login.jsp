@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Login.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/validacion.css">
     <title>Login</title>
 </head>
 <body background="img/fondo8.jpg">
@@ -16,16 +17,16 @@
 
 
 <div class="cont">
-    <form  action="Usuario" method="post" id="frmValidacion" novalidate>
+    <form  action="Usuario" method="post" novalidate id="frmValidacion" novalidate>
         
-    <div id="InputEmail">
-        <label >E-mail </label>
+    <div id="inputUsername">
+        <label >Nombre De Usuario </label>
         <br>
-        <input type="email" name="inputUsername" id="inputUsername" placeholder="Ingrese el nombre del usuario" required min="5" >
+        <input type="text" name="inputUsername" id="inputUsername" placeholder="Ingrese el nombre del usuario" required  >
         <div class="feedback"></div>
     </div>
     <br><br>
-    <div id="InputPass">
+    <div id="inputPassword">
         <label>Password</label>
         <br>
         <input type="password" name="inputPassword" id="inputPassword" placeholder="Ingrese su password" required>
@@ -34,10 +35,10 @@
     <br><br>
         <button type="submit" id="buton" name="enviar" value="LoginUsu">Ingresar</button>
         <a href="#">Has olvidado tu password?</a>
-
     </form>
 </div>
-<div class="cont2"></div>   
+<div class="cont2"></div> 
+<script src="js/validacion.js"></script>
 
 </body>
 </html>

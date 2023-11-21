@@ -24,7 +24,11 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li><a href="#"><button>Salir</button> </a></li>
+                            <li> 
+                                <form action="CerrarSesion" method="post">
+                                    <input type="submit" class="btnSalir" value="Salir">
+                                </form>
+                            </li> 
                         </ul>
                     </li>
                 </ul>
@@ -34,20 +38,31 @@
             <div class="cont12">
            
             <form action="ReverseLogic" method="post">
-    
+                
+        <br>
+        <div class="contlabel">
+            <input type="text" name="Prod_Nombre" id="Prod_Nombre">
             <label for="Prod_Nombre"> Nombre Producto</label>
-            <input type="text" name="Prod_Nombre" id="Prod_Nombre" placeholder="Ingrese El Nombre Del Producto">
-    
+        </div>
+        
+        <br><br>
+        <div class="contlabel1">
+            <input type="text" name="Prod_Cant" id="Prod_Cant">
             <label for="Prod_Cant"> Cantidad</label>
-            <input type="text" name="Prod_Cant" id="Prod_Cant"  placeholder="Ingrese La Cantidad Del Producto">
-    
-            <label for="Prod_PrecioUni"> Precio Unidad</label>
-            <input type="text" name="Prod_PrecioUni" id="Prod_PrecioUni"  placeholder="Ingrese El Precio Por Unidad Del Producto">
-    
+        </div>
+        <br><br>
+        <div class="contlabel2">
+           <input type="text" name="Prod_PrecioUni" id="Prod_PrecioUni">
+           <label for="Prod_PrecioUni"> Precio Unidad</label>
+        </div>
+        
+        <br><br>
+        <div class="contlabel3">
+            <input type="text" name="Mate_Id" id="Mate_Id">
             <label for="Mate_ID"> Id Material</label>
-            <input type="text" name="Mate_Id" id="Mate_Id"  placeholder="Ingrese El Id Del Material">
-    
-            <button name="enviar" value="registerProd">Enviar</button>
+        </div>
+        <br><br>
+            <button id="btncal" name="enviar" value="registerProd">Enviar</button>
     
         </form>
 </body>
