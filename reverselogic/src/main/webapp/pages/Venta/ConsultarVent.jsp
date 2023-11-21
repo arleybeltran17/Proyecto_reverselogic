@@ -69,13 +69,13 @@
                                 <p id="Usu_Id_<%= venta.getVent_Id() %>" class="cardUsu_Id"><%= venta.getUsu_Id() %></p>
                                 <br>
                                 <p class="card--subtittle">Id Del Cliente</p>
-                                <p id="Clie_Id_<%= venta.getVent_Id() %>" class="cardClie_Id" ><%= venta.getClie_Id() %> </p>
+                                <p id="Clie_Id_<%= venta.getVent_Id() %>" class="cardClie_Id" ><%= venta.getClie_Id() %></p>
                                 <br>
                                 <p class="card--subtittle">Id Del Metodo De Pago</p>
-                                <p id="Metod_Id_<%= venta.getVent_Id() %>" class="cardMetod_Id"><%= venta.getMetod_Id() %> </p>
+                                <p id="Metod_Id_<%= venta.getVent_Id() %>" class="cardMetod_Id"><%= venta.getMetod_Id() %></p>
                                 <br>
                                 <p class="card--subtittle">Id De La Prenda</p>
-                                <p id="Prend_Id_<%= venta.getVent_Id() %>" class="cardPrend_Id"><%= venta.getPrend_Id() %> </p>
+                                <p id="Prend_Id_<%= venta.getVent_Id() %>" class="cardPrend_Id"><%= venta.getPrend_Id() %></p>
                                 <br>
                                 <form action="<%= request.getContextPath() %>/Venta" method="post">
                                     <input type="hidden" name="enviar" value="eliminarVent">
@@ -167,6 +167,6 @@ if (mostrarModal != null && mostrarModal) {
 </div>
 </div>
 <% } %>
-            <script type="text/javascript" src="js/modal6.js"></script>
+            <script type="text/javascript" src="js/modal61.js"></script>
             </body>
 </html>

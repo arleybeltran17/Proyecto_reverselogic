@@ -130,26 +130,42 @@ public class Venta extends HttpServlet{
     }
     //? UPDATE - ACTUALIZAR
     private void actualizar(HttpServletRequest req, HttpServletResponse resp) {
-        if(req.getParameter("Vent_Cantidad")!=null){
-            r.setVent_Cantidad(Integer.parseInt(req.getParameter("Vent_Cantidad"))); 
+        System.out.println("Entro al metodo en el controlador");
+        String MetodoId=req.getParameter("Metod_Id");
+        String PrendaId=req.getParameter("Prend_Id");
+        System.out.println(MetodoId);
+        System.out.println(PrendaId);
+
+        if(req.getParameter("Vent_Id")!=null){
+            System.out.println("Entro al 1");
+            r.setVent_Id(Integer.parseInt(req.getParameter("Vent_Id"))); 
         }
 
+        if(req.getParameter("Vent_Cantidad")!=null){
+            System.out.println("Entro al 1");
+            r.setVent_Cantidad(Integer.parseInt(req.getParameter("Vent_Cantidad"))); 
+        }
         if(req.getParameter("Vent_Fecha")!=null){
+            System.out.println("Entro al 2");
             String Venta_Fecha = req.getParameter("Vent_Fecha");
             Date Fecha_Vent_Parse_Date= Date.valueOf(Venta_Fecha);
             r.setVent_Fecha(Fecha_Vent_Parse_Date);
 
         }if(req.getParameter("Usu_Id")!=null){
+            System.out.println("Entro al 3");
             r.setUsu_Id(Integer.parseInt(req.getParameter("Usu_Id"))); 
         }
         if(req.getParameter("Clie_Id")!=null){
-            r.setClie_Id(Integer.parseInt(req.getParameter("Clie_Id"))); 
+            System.out.println("Entro al 4");
+            r.setClie_Id(Integer.parseInt(req.getParameter("Clie_Id").trim())); 
         }
         if(req.getParameter("Metod_Id")!=null){
-            r.setMetod_Id(Integer.parseInt(req.getParameter("Metod_Id"))); 
+            System.out.println("Entro al 5");
+            r.setMetod_Id(Integer.parseInt(req.getParameter("Metod_Id").trim())); 
         }
         if(req.getParameter("Prend_Id")!=null){
-            r.setPrend_Id(Integer.parseInt(req.getParameter("Prend_Id"))); 
+            System.out.println("Entro al 6");
+            r.setPrend_Id(Integer.parseInt(req.getParameter("Prend_Id").trim())); 
         } 
         
         try {
@@ -157,7 +173,7 @@ public class Venta extends HttpServlet{
             System.out.println("Registro actualizado correctamente");
 
             //? Redireccionamiento preventivo.       
-            req.getRequestDispatcher("pages/Venta/ConsultarPrend.jsp").forward(req, resp);
+            req.getRequestDispatcher("pages/Venta/ConsultarVent.jsp").forward(req, resp);
 
         } catch (Exception e) {
             System.out.println("Error en la actualizacion del registro "+e.getMessage().toString());

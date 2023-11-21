@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     updateButtons.forEach(function(button) {
         button.addEventListener("click", function(e) {
-            e.preventDefault()
+
             console.log("Botón clickeado");
             let modal = document.getElementById("myModal1");
 
