@@ -24,11 +24,12 @@
                 <a href="#"><img class="imgbtn" src="<%= request.getContextPath() %>/img/usuario-de-perfil.png" alt="Usuario"></a>
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
-                    <li><a href="Prenda?enviar=prenda"><button>Menú</button> </a></li>
-                    <li> 
+                        <li><a href="Prenda?enviar=prenda"><button>Volver</button> </a></li>
+                        <li><a href="index.jsp"><button>Menu</button> </a></li>
+                    <li>
                         <form action="CerrarSesion" method="post">
-                            <input type="submit" class="btnSalir" value="Salir">
-                        </form>
+                            <button type="submit" class="btnSalir">Salir</button>
+                        </form> 
                     </li> 
                 </ul>
             </li>
@@ -90,7 +91,7 @@
                     <% } %>
                 <% } else { %>
                     <div class="card">
-                        <p>No se encontraron Prendas.</p>
+                        <p>No Se Encontraron Prendas.</p>
                     </div>
                 <% } %>
             </div>

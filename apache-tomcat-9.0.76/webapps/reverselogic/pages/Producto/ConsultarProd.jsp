@@ -23,12 +23,13 @@
                 <a href="#"><img class="imgbtn" src="<%= request.getContextPath() %>/img/usuario-de-perfil.png" alt="Usuario"></a>
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
-                    <li><a href="ReverseLogic?enviar=producto"><button>Menú</button> </a></li>
-                    <li> 
-                        <form action="CerrarSesion" method="post">
-                            <input type="submit" class="btnSalir" value="Salir">
-                        </form>
-                    </li> 
+                        <li><a href="ReverseLogic?enviar=producto"><button>Volver</button> </a></li>
+                        <li><a href="index.jsp"><button>Menu</button> </a></li>
+                    <li>
+                                <form action="CerrarSesion" method="post">
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
+                            </li> 
                 </ul>
             </li>
         </ul>
@@ -63,7 +64,7 @@
                                 <p class="card--subtittle">CANTIDAD</p>
                                 <p id="Prod_Cant_<%= producto.getProd_id() %>" class="cardProdCant"><%= producto.getProd_cant() %></p>
                                 <p class="card--subtittle">PRECIO UNIDAD</p>
-                                <p id="Prod_PrecioUni_<%= producto.getProd_id() %>" class="cardProdPrecioUni"><%= producto.getProd_preciouni() %></p>
+                                <p id="Prod_PrecioUni_<%= producto.getProd_id() %>" class="cardProdPrecioUni"><%= producto.getProd_precioUni() %></p>
                                 <p class="card--subtittle">ID MATERIAL</p>
                                 <p id="Mate_Id_<%= producto.getProd_id() %>" class="cardMateId"><%= producto.getMate_id() %></p>
 
@@ -79,7 +80,7 @@
                     <% } %>
                 <% } else { %>
                     <div class="card">
-                        <p>No se encontraron usuarios.</p>
+                        <p>No Se Encontraron Productos.</p>
                     </div>
                 <% } %>
             </div>
@@ -95,22 +96,34 @@
     <div class="modal-content1">
         <span class="close1">X</span>
 
-        <h2>Actualizar Usuario</h2>
+        <h2>Actualizar Producto</h2>
         <form action="ReverseLogic" method="post">
+            
+        <div class="contlabel">
             <label for="Prod_id"> ID PRODUCTO</label>
             <input type="text" name="Prod_id" id="Prod_id"  placeholder="Ingrese Su Id">
-
+        </div>
+        
+        <div class="contlabel1">
             <label for="Prod_Nombre"> NOMBRE PRODUCTO</label>
             <input type="text" name="Prod_Nombre" id="Prod_Nombre" placeholder="Ingrese Su Edad">
-
+        </div>
+        
+        <div class="contlabel2">
             <label for="Prod_Cant"> CANTIDAD</label>
             <input type="text" name="Prod_Cant" id="Prod_Cant"  placeholder="Ingrese Su Apellido">
+        </div>
 
+        
+        <div class="contlabel3">
             <label for="Prod_PrecioUni"> PRECIO UNIDAD</label>
             <input type="text" name="Prod_PrecioUni" id="Prod_PrecioUni"  placeholder="Ingrese Su Correo">
-
+        </div>
+        
+        <div class="contlabel4">
             <label for="Mate_Id"> ID MATERIAL</label>
             <input type="text" name="Mate_Id" id="Mate_Id"  placeholder="Ingrese Su Contraseña">
+        </div>
 
             <button id="btncal" class="ov-btn-grow-skew" name="enviar" value="updateProd">Enviar</button>
         </form>

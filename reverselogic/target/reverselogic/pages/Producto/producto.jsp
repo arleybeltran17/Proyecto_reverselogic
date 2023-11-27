@@ -22,7 +22,7 @@
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href=""><button>Menú</button> </a></li>
                             <li>
-                                <form action="LogoutServlet" method="post">
+                                <form action="CerrarSesion" method="post">
                                     <button type="submit" class="btnSalir">Salir</button>
                                 </form> 
                             </li> 

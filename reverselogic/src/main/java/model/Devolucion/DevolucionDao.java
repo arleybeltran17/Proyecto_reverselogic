@@ -1,5 +1,6 @@
 package model.Devolucion;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,6 +10,7 @@ import java.util.List;
 
 import model.Conexion;
 import model.Devolucion.DevolucionVo;
+import model.Venta.VentaVo;
 
 public class DevolucionDao {
 
@@ -25,28 +27,28 @@ public class DevolucionDao {
         con = Conexion.conectar();
     }
 
-    public int registerDevo(DevolucionVo Devolucion) throws SQLException{
+    public int registerDevo(DevolucionVo devolucion) throws SQLException {
+        String sql = "{CALL realizar_devolucion(?, ?, ?,?)}";
     
-        sql="INSERT INTO devolucion (Devo_Cant_Preducto, Devo_Razon, Devo_Fecha,Emple_id) values (?,?,?,?)";
-
-        System.out.println(sql);
-
-        try{ 
-            ps=con.prepareStatement(sql); //preparar sentencia.
-            ps.setInt(1, Devolucion.getDevo_Cant_Preducto());
-            ps.setString(2, Devolucion.getDevo_Razon());
-            ps.setDate(3,Devolucion.getDevo_Fecha());
-            ps.setInt(4, Devolucion.getEmple_id());
-
-            r = ps.executeUpdate();
-            ps.close();
-        } catch (SQLException e) {
-            // Manejar la excepción adecuadamente, por ejemplo, registrándola o lanzándola.
-            e.printStackTrace();
-            r = -1; // Indicar un error en el resultado
+        try (CallableStatement cs = con.prepareCall(sql)) {
+            cs.setInt(1, devolucion.getDevo_Cant_Preducto());
+            cs.setString(2, devolucion.getDevo_Razon());
+            cs.setInt(3, devolucion.getEmple_id());
+            cs.setInt(4, devolucion.getPrend_id());
+    
+            boolean resultado = cs.execute();
+            if (resultado) {
+                // Puedes procesar los resultados si el procedimiento almacenado devuelve algo
+            }
+    
+            String mensaje = cs.getString("DevolucionDao Dice: Devolucion Registrada Correctamente");
+            System.out.println(mensaje);
+    
+            return 1; // Puedes ajustar el valor de retorno según tus necesidades
+        } catch (Exception e) {
+            System.out.println("El Error Es: " + e.getMessage());
+            return -1; // Indicar un error en el resultado
         }
-
-        return r;
     }
 
     public List<DevolucionVo> listarDevo () throws SQLException {
@@ -63,6 +65,7 @@ public class DevolucionDao {
                 r.setDevo_Razon(rs.getString("Devo_Razon"));
                 r.setDevo_Fecha(rs.getDate("Devo_Fecha"));
                 r.setEmple_id(rs.getInt("Emple_id"));
+                r.setPrend_id(rs.getInt("Prend_id"));
                 devolucion.add(r);
             }
             ps.close();
@@ -91,7 +94,8 @@ public class DevolucionDao {
             ps.setString(2, Devolucion.getDevo_Razon());
             ps.setDate(3, Devolucion.getDevo_Fecha());
             ps.setInt(4, Devolucion.getEmple_id());
-            ps.setInt(5, Devolucion.getDevo_id());
+            ps.setInt(5, Devolucion.getPrend_id());
+            ps.setInt(6, Devolucion.getDevo_id());
             System.out.println(ps);
             ps.executeUpdate(); //Ejecutar sentencia.
             ps.close(); //cerrar sentencia.

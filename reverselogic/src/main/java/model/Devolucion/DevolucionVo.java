@@ -3,7 +3,6 @@ package model.Devolucion;
 import java.sql.Date;
 
 public class DevolucionVo {
-
     //NOTA En las clases Vo almacenamos los datos que nos llegan de las vistas y la base de datos. Como una pequeña ram intermediaria.
     
     //SECCION Atributos
@@ -12,16 +11,19 @@ public class DevolucionVo {
     private String Devo_Razon;
     private Date Devo_Fecha;
     private int Emple_id;
+    private int Prend_id;
 
     public DevolucionVo() {
     }
 
-    public DevolucionVo(int devo_id, int devo_Cant_Preducto, String devo_Razon, Date devo_Fecha, int emple_id) {
+    public DevolucionVo(int devo_id, int devo_Cant_Preducto, String devo_Razon, Date devo_Fecha, int emple_id,
+            int prend_id) {
         Devo_id = devo_id;
         Devo_Cant_Preducto = devo_Cant_Preducto;
         Devo_Razon = devo_Razon;
         Devo_Fecha = devo_Fecha;
         Emple_id = emple_id;
+        Prend_id = prend_id;
     }
 
     public int getDevo_id() {
@@ -64,7 +66,11 @@ public class DevolucionVo {
         Emple_id = emple_id;
     }
 
-    
-    
+    public int getPrend_id() {
+        return Prend_id;
+    }
 
+    public void setPrend_id(int prend_id) {
+        Prend_id = prend_id;
+    }
 }

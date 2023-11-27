@@ -19,10 +19,9 @@
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
-                        <li><a href="Devolucion?enviar=devolucion"><button>Volver</button> </a></li>
-                        <li><a href="index.jsp"><button>Menu</button> </a></li>
+                            <li><a href="index.jsp"><button>Volver</button> </a></li>
                             <li>
-                                <form action="LogoutServlet" method="post">
+                                <form action="CerrarSesion" method="post">
                                     <button type="submit" class="btnSalir">Salir</button>
                                 </form> 
                             </li>
@@ -54,7 +53,7 @@
         <div class="cards">
             <div class="prendas">
                 <div class="imgChaqueta">
-                    <img src="img/como6icons.png alt="" width="200px" height="150px">
+                    <img src="img/como6icons.png" alt="" width="200px" height="150px">
                     <div class="detalle">
                         <h2>Material</h2>
                     </div>
@@ -71,7 +70,7 @@
         <div class="cards">
             <div class="prendas">
                 <div class="imgChaqueta">
-                    <img src="img/camisita.png" alt="" width="200px" height="150px">
+                    <img src="img/logo_metodopago.jpeg" alt="" width="200px" height="150px">
                     <div class="detalle">
                         <h2>Metodo De Pago</h2>
                         <div class="btnContainer">

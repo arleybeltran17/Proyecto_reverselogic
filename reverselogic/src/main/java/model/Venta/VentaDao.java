@@ -1,10 +1,12 @@
 package model.Venta;
 
 import java.security.spec.ECFieldF2m;
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,31 +28,32 @@ public class VentaDao {
         con = Conexion.conectar();
     }
 
-    public int registrarVent(VentaVo Venta) throws SQLException{
+    public int registrarVent(VentaVo venta) throws SQLException {
+        String sql = "{CALL realizar_venta(?, ?, ?, ?, ?)}";
     
-        sql="INSERT INTO venta (Vent_Cantidad, Vent_Fecha, Usu_Id, Clie_Id, Metod_Id, Prend_Id) values (?,?,?,?,?,?)";
-
-        System.out.println(sql);
-
-        try{
-            ps=con.prepareStatement(sql); //preparar sentencia.
-            ps.setInt(1, Venta.getVent_Cantidad());
-            ps.setDate(2, Venta.getVent_Fecha());
-            ps.setInt(3, Venta.getUsu_Id());
-            ps.setInt(4, Venta.getClie_Id());
-            ps.setInt(5, Venta.getMetod_Id());
-            ps.setInt(6, Venta.getPrend_Id());
-
-            r = ps.executeUpdate();
-            ps.close();
+        try (CallableStatement cs = con.prepareCall(sql)) {
+            cs.setInt(1, venta.getVent_Cantidad());
+            cs.setInt(2, venta.getUsu_Id());
+            cs.setInt(3, venta.getClie_Id());
+            cs.setInt(4, venta.getMetod_Id());
+            cs.setInt(5, venta.getPrend_Id());
+    
+            boolean resultado = cs.execute();
+            if (resultado) {
+                // Puedes procesar los resultados si el procedimiento almacenado devuelve algo
+            }
+    
+            String mensaje = cs.getString("mensaje");
+            System.out.println(mensaje);
+    
+            return 1; // Puedes ajustar el valor de retorno según tus necesidades
         } catch (Exception e) {
-            System.out.println("El Error Es: "+e.getMessage().toString());
-
-            r = -1; // Indicar un error en el resultado
+            System.out.println("El Error Es: " + e.getMessage());
+            return -1; // Indicar un error en el resultado
         }
-
-        return r;
     }
+    
+    
 
     public List<VentaVo> listarVent() throws SQLException {
         List<VentaVo> venta = new ArrayList<>();

@@ -25,7 +25,7 @@
                     <li><a href="#"><button>Perfil</button></a></li>
                     <li><a href="Devolucion?enviar=devolucion"><button>Menu</button> </a></li>
                     <li>
-                        <form action="LogoutServlet" method="post">
+                        <form action="CerrarSesion" method="post">
                             <button type="submit" class="btnSalir">Salir</button>
                         </form> 
                     </li>  
@@ -79,7 +79,7 @@
                     <% } %>
                 <% } else { %>
                     <div class="card">
-                        <p>No se encontraron .</p>
+                        <p>No Se Encontraron Devoluciones</p>
                     </div>
                 <% } %>
             </div>

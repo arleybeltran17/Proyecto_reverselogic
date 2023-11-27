@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSession;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
+import com.lowagie.text.Image;
 import com.lowagie.text.PageSize;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.Phrase;
@@ -41,6 +42,9 @@ public class Reportes extends HttpServlet {
     document.open();
     document.add(new Paragraph("Infome detalles de venta."));
     document.add(new Paragraph(" "));
+    document.add(new Paragraph("En este reporte mostraremos la cantidad de ventas, si han aumentado o disminuido las ventas, tambien mostraremos una tabla con las ventas generadas."));
+    document.add(new Paragraph(" "));       
+   
 
     List<VentaVo> ventas = null;
         try {
@@ -53,7 +57,6 @@ public class Reportes extends HttpServlet {
         PdfPTable table = new PdfPTable(7);
         table.getDefaultCell().setPadding(8);
         
-        table.addCell(new Phrase("ID Venta"));
         table.addCell(new Phrase("Cantidad De La Venta"));
         table.addCell(new Phrase("Fecha De La Venta"));
         table.addCell(new Phrase("Usuario ID"));
@@ -63,7 +66,6 @@ public class Reportes extends HttpServlet {
     
 
         for(VentaVo venta: ventas){
-            String IdVentaStr=String.valueOf(venta.getVent_Id());
             String CantidadVentaSTR= String.valueOf(venta.getVent_Cantidad());
             String FechaVentaSTR= String.valueOf(venta.getVent_Fecha());
             String UsuarioIdSTR= String.valueOf(venta.getUsu_Id());
@@ -71,7 +73,6 @@ public class Reportes extends HttpServlet {
             String MetodoIdSTR = String.valueOf(venta.getMetod_Id());
             String PrendaIdSTR = String.valueOf(venta.getPrend_Id());
 
-            table.addCell(IdVentaStr);
             table.addCell(CantidadVentaSTR);
             table.addCell(FechaVentaSTR);
             table.addCell(UsuarioIdSTR);

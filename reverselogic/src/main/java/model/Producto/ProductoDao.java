@@ -14,7 +14,7 @@ public class ProductoDao {
 
 
     //!ADVERTENCIA:  En las clases Dao podremos realizar diferentes ejecucuines como lo hacemos en phpMyAdmin o WorkBench.
-    //?  Atrubutos para realizar acciones en la base de datos.   e
+    //?  Atrubutos para realizar acciones en la base de datos.
     Connection con; //objeto de conexión
     PreparedStatement ps; //preparar sentencias
     ResultSet rs; // almacenar consutas
@@ -27,7 +27,7 @@ public class ProductoDao {
 
     public int registrarProd(ProductoVo Producto) throws SQLException{
 
-        sql="INSERT INTO producto (Prod_Nombre, Prod_Cant, Prod_Preciouni, Mate_Id) values (?,?,?,?)";
+        sql="INSERT INTO producto (Prod_Nombre, Prod_Cant, Prod_PrecioUni, Mate_Id) values (?,?,?,?)";
 
         System.out.println(sql);
 
@@ -35,7 +35,7 @@ public class ProductoDao {
             ps=con.prepareStatement(sql); //preparar sentencia.
             ps.setString(1, Producto.getProd_nombre());
             ps.setInt(2, Producto.getProd_cant());
-            ps.setInt(3, Producto.getProd_preciouni());
+            ps.setInt(3, Producto.getProd_precioUni());
             ps.setInt(4, Producto.getMate_id());
 
             r = ps.executeUpdate();
@@ -89,7 +89,7 @@ public class ProductoDao {
             ps=con.prepareStatement(sql); //preparar sentencia.
             ps.setString(1, Producto.getProd_nombre());
             ps.setInt(2, Producto.getProd_cant());
-            ps.setInt(3, Producto.getProd_preciouni());
+            ps.setInt(3, Producto.getProd_precioUni());
             ps.setInt(4, Producto.getMate_id());
             ps.setInt(5, Producto.getProd_id());
             System.out.println(ps);

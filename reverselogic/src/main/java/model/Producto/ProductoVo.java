@@ -8,7 +8,7 @@ public class ProductoVo {
     private int prod_id;
     private String prod_nombre;
     private int prod_cant;
-    private int prod_preciouni;
+    private int prod_precioUni;
     private int mate_id;
 
 
@@ -16,11 +16,11 @@ public class ProductoVo {
     }
 
 
-    public ProductoVo(int prod_id, String prod_nombre, int prod_cant, int prod_preciouni, int mate_id) {
+    public ProductoVo(int prod_id, String prod_nombre, int prod_cant, int prod_precioUni, int mate_id) {
       this.prod_id = prod_id;
       this.prod_nombre = prod_nombre;
       this.prod_cant = prod_cant;
-      this.prod_preciouni = prod_preciouni;
+      this.prod_precioUni = prod_precioUni;
       this.mate_id = mate_id;
     }
 
@@ -55,12 +55,12 @@ public class ProductoVo {
     }
 
 
-    public int getProd_preciouni() {
-      return prod_preciouni;
+    public int getProd_precioUni() {
+      return prod_precioUni;
   }
 
   public void setProd_preciouni(int prod_preciouni) {
-      this.prod_preciouni = prod_preciouni;
+      this.prod_precioUni = prod_precioUni;
   }
 
 
@@ -73,8 +73,5 @@ public class ProductoVo {
       this.mate_id = mate_id;
     }
 
-    
-
-    
 }
 

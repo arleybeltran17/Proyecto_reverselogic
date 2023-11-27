@@ -26,7 +26,7 @@
                         <li><a href="Usuario?enviar=usuario"><button>Volver</button> </a></li>
                         <li><a href="index.jsp"><button>Menu</button> </a></li>
                     <li>
-                        <form action="LogoutServlet" method="post">
+                        <form action="CerrarSesion" method="post">
                             <button type="submit" class="btnSalir">Salir</button>
                         </form> 
                     </li>  
@@ -80,7 +80,7 @@
                     <% } %>
                 <% } else { %>
                     <div class="card">
-                        <p>No se encontraron usuarios.</p>
+                        <p>No Se Encontraron Usuarios.</p>
                     </div>
                 <% } %>
             </div>
@@ -96,25 +96,34 @@
             <div id="myModal1" class="modal1">
             <div class="modal-content1">
             <span class="close1">X</span>
-        
+    
             <h2>Actualizar Usuarios</h2>
             <form action="Usuario" method="post">
         
-            <label for="Usu_Id"> ID Usuario</label>
-            <input type="text" name="Usu_Id" id="Usu_Id"  placeholder="Ingrese El Id Del Cliente">
-    
-            <label for="Usu_Nombre"> Nombre Usuario</label>
-            <input type="text" name="Usu_Nombre" id="Usu_Nombre" placeholder="Ingrese El Tipo De Documento">
-    
+                <div class="contlabel">
+                    <label for="Usu_Id"> ID Usuario</label>
+                    <input type="text" name="Usu_Id" id="Usu_Id"  placeholder="Ingrese El Id Del Cliente">
+                </div>
+                
+                <div class="contlabel1">
+                    <label for="Usu_Nombre"> Nombre Usuario</label>
+                    <input type="text" name="Usu_Nombre" id="Usu_Nombre" placeholder="Ingrese El Tipo De Documento">
+                </div>
+
+                
+        <div class="contlabel2">
             <label for="Usu_Rol"> Rol De Usuario</label>
             <input type="text" name="Usu_Rol" id="Usu_Rol"  placeholder="Ingrese El Numero De Documento">
-    
+        </div>
+            
+        <div class="contlabel3">
             <label for="Usu_Password"> Contraseña De Usuario</label>
             <input type="text" name="Usu_Password" id="Usu_Password"  placeholder="Ingrese El Nombre Del Cliente">
-    
+        </div>
+        <div class="contlabel4">
             <label for="Emple_Id"> Id De Empleado</label>
             <input type="text" name="Emple_Id" id="Emple_Id"  placeholder="Ingrese El Apellido Del Cliente">
-    
+        </div>
             <button class="btncal" name="enviar" value="updateUsu">Enviar</button>
         
             </form>

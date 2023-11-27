@@ -26,11 +26,11 @@
                     <li><a href="#"><button>Perfil</button></a></li>
                         <li><a href="Venta?enviar=venta"><button>Volver</button> </a></li>
                         <li><a href="index.jsp"><button>Menu</button> </a></li>
-                    <li> 
-                        <form action="CerrarSesion" method="post">
-                            <input type="submit" class="btnSalir" value="Salir">
-                        </form>
-                    </li> 
+                        <li>
+                            <form action="CerrarSesion" method="post">
+                                <button type="submit" class="btnSalir">Salir</button>
+                            </form> 
+                        </li>
                 </ul>
             </li>
         </ul>
@@ -91,7 +91,7 @@
                     <% } %>
                 <% } else { %>
                     <div class="card">
-                        <p>No se encontraron ventas.</p>
+                        <p>No Se Encontraron Ventas.</p>
                     </div>
                 <% } %>
             </div>

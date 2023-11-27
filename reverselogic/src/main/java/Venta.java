@@ -92,11 +92,11 @@ public class Venta extends HttpServlet{
     //? METODOS
 
     //? ADD - REGISTER+
-    private void add(HttpServletRequest req, HttpServletResponse resp) {
-        System.out.println(req.getParameter("Vent_Cantidad"));        
+    private void add(HttpServletRequest req, HttpServletResponse resp) {       
         if(req.getParameter("Vent_Cantidad")!=null){
             r.setVent_Cantidad(Integer.parseInt(req.getParameter("Vent_Cantidad"))); 
         }
+
         if(req.getParameter("Vent_Fecha")!=null){
             String Venta_Fecha = req.getParameter("Vent_Fecha");
             Date Fecha_Vent_Parse_Date= Date.valueOf(Venta_Fecha);

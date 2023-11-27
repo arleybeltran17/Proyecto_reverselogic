@@ -13,7 +13,7 @@
     
 <h1>Bienvenido a Confecciones Ruth!!
 </h1>
-<p> Donde la moda siempre es tu mejor aliado</p>
+<p> Donde La Moda Siempre Es Tu Mejor Aliado</p>
 
 
 <div class="cont">

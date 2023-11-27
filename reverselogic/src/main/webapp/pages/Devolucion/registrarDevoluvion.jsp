@@ -26,7 +26,7 @@
                         <li><a href="Devolucion?enviar=devolucion"><button>Volver</button> </a></li>
                         <li><a href="index.jsp"><button>Menu</button> </a></li>
                             <li>
-                                <form action="LogoutServlet" method="post">
+                                <form action="CerrarSesion" method="post">
                                     <button type="submit" class="btnSalir">Salir</button>
                                 </form> 
                             </li>  
@@ -60,7 +60,11 @@
         <input type="text" name="Emple_id" id="Devo_Emple_id" required>
         <label for="Devo_Emple_id">Id Empleado</label>
         </div>
-        <br>
+        <br><br>
+        <div class="contlabel4">
+        <input type="text" name="Prend_id" id="Prend_id" required>
+        <label for="Prend_id">Id Empleado</label>
+        </div>
         <button id="btncal" name="enviar" value="registerDevo">Enviar</button>
     </form>
 </body>

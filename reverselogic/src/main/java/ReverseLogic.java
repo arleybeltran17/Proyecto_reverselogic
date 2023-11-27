@@ -94,12 +94,11 @@ public class ReverseLogic extends HttpServlet {
         if(req.getParameter("Prod_Cant")!=null){
             r.setProd_cant(Integer.parseInt(req.getParameter("Prod_Cant"))); 
         }
-        if(req.getParameter("Prod_Preciouni")!=null){
-        
-            r.setProd_preciouni(Integer.parseInt(req.getParameter("Prod_Preciouni"))); 
+        if(req.getParameter("Prod_PrecioUni")!=null){
+            r.setProd_preciouni(Integer.parseInt(req.getParameter("Prod_PrecioUni"))); 
+            System.out.println("Entro Al Precio"+ req.getParameter("Prod_PrecioUni"));
 
         }if(req.getParameter("Mate_Id")!=null){
-        
             r.setMate_id(Integer.parseInt(req.getParameter("Mate_Id"))); 
         }
         else{
@@ -150,7 +149,7 @@ public class ReverseLogic extends HttpServlet {
     }
 
 
-        private void listar(HttpServletRequest req, HttpServletResponse resp) {
+    private void listar(HttpServletRequest req, HttpServletResponse resp) {
     try {
         List<ProductoVo> producto = rd.listarProd();
         req.setAttribute("productos", producto);

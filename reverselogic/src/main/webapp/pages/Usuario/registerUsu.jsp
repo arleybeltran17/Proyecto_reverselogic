@@ -23,7 +23,7 @@
                         <li><a href="Usuario?enviar=usuario"><button>Volver</button> </a></li>
                         <li><a href="index.jsp"><button>Menu</button> </a></li>
                             <li>
-                                <form action="LogoutServlet" method="post">
+                                <form action="CerrarSesion" method="post">
                                     <button type="submit" class="btnSalir">Salir</button>
                                 </form> 
                             </li> 

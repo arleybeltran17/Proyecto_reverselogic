@@ -23,7 +23,7 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li>
-                                <form action="LogoutServlet" method="post">
+                                <form action="CerrarSesion" method="post">
                                     <button type="submit" class="btnSalir">Salir</button>
                                 </form> 
                             </li>                          
@@ -34,22 +34,69 @@
         </header>
 
         
+        <!-- Venta :3 -->
             <main class="containerCards">
+
                 <div class="cards">
                     <div class="prendas">
                         <div class="imgChaqueta">
-                            <img src="img/imgVenta.jpg" alt="" width="200px" height="110">
+                            <img src="img/empleado.jpg" alt="" width="200px" height="110">
                             <div class="detalle">
-                                <h2>Venta</h2>
-                            </div>
+                                <h2>Empleado</h2>
                                 <div class="btnContainer">
-                                   <a href="Venta?enviar=venta"> <button class="">Ingresar</button></a>
+                                    <a href="Empleado?enviar=empleado"> <button class="btnEliminar" >Ingresar</button></a>
                                 </div>
-                            
+                            </div>
                         </div>
                     </div>
                 </div>
-  
+
+                
+
+                <div class="cards">
+                    <div class="prendas">
+                        <div class="imgChaqueta">
+                            <img src="img/cliente.jpg" alt="" width="200px" height="110">
+                            <div class="detalle">
+                                <h2>Cliente</h2>
+                                <div class="btnContainer">
+                                    <a href="Cliente?enviar=cliente"> <button class="btnEliminar">Ingresar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="cards">
+                    <div class="prendas">
+                        <div class="imgChaqueta">
+                            <img src="img/usuario.jpg" alt="" width="200px" height="110">
+                            <div class="detalle">
+                                <h2>Usuario</h2>
+                                <div class="btnContainer">
+                                    <a href="Usuario?enviar=usuario"> <button class="btnUsuario">Ingresar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="prendas">
+                        <div class="imgChaqueta">
+                            <img src="img/detallitos.png" alt="" width="200px" height="110">
+                            <div class="detalle">
+                                <h2>Detalles De Prenda</h2>
+                                <div class="btnContainer">
+                                    <a href="Detalles?enviar=detalle"> <button class="btnDetalle">Ingresar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
                 <div class="cards">
                     <div class="prendas">
                         <div class="imgChaqueta">
@@ -58,23 +105,6 @@
                                 <h2>Producto</h2>
                                 <div class="btnContainer">
                                     <a href="ReverseLogic?enviar=producto"> <button class="btnEliminar">Ingresar</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-    
-                <div class="cards">
-                    <div class="prendas">
-                        <div class="imgChaqueta">
-                            <img src="img/devolucion.png" alt="" width="200px" height="110">
-                            <div class="detalle">
-                                <h2>Devolucion</h2>
-                                <div class="btnContainer">
-                                    <a href="Devolucion?enviar=devolucion"> <button class="btnEliminar">Ingresar</button></a>
-
                                 </div>
                             </div>
                         </div>
@@ -96,58 +126,33 @@
                     </div>
                 </div>
 
-
                 <div class="cards">
                     <div class="prendas">
                         <div class="imgChaqueta">
-                            <img src="img/empleado.jpg" alt="" width="200px" height="110">
+                            <img src="img/imgVenta.jpg" alt="" width="200px" height="110">
                             <div class="detalle">
-                                <h2>Empleado</h2>
-                                <div class="btnContainer">
-                                    <a href="Empleado?enviar=empleado"> <button class="btnEliminar" >Ingresar</button></a>
-                                </div>
+                                <h2>Venta</h2>
                             </div>
+                                <div class="btnContainer">
+                                   <a href="Venta?enviar=venta"> <button class="">Ingresar</button></a>
+                                </div>
+                            
                         </div>
                     </div>
                 </div>
+  
 
-
+                
+    
                 <div class="cards">
                     <div class="prendas">
                         <div class="imgChaqueta">
-                            <img src="img/cliente.jpg" alt="" width="200px" height="110">
+                            <img src="img/devolucion.png" alt="" width="200px" height="110">
                             <div class="detalle">
-                                <h2>Cliente</h2>
+                                <h2>Devolucion</h2>
                                 <div class="btnContainer">
-                                    <a href="Cliente?enviar=cliente"> <button class="btnEliminar">Ingresar</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    <a href="Devolucion?enviar=devolucion"> <button class="btnEliminar">Ingresar</button></a>
 
-
-                <div class="cards">
-                    <div class="prendas">
-                        <div class="imgChaqueta">
-                            <img src="img/usuario.jpg" alt="" width="200px" height="110">
-                            <div class="detalle">
-                                <h2>Usuario</h2>
-                                <div class="btnContainer">
-                                    <a href="Usuario?enviar=usuario"> <button class="btnUsuario">Ingresar</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="prendas">
-                        <div class="imgChaqueta">
-                            <img src="img/detallitos.png" alt="" width="200px" height="110">
-                            <div class="detalle">
-                                <h2>Detalles De Prenda</h2>
-                                <div class="btnContainer">
-                                    <a href="Detalles?enviar=detalle"> <button class="btnDetalle">Ingresar</button></a>
                                 </div>
                             </div>
                         </div>

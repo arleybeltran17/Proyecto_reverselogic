@@ -23,12 +23,13 @@
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
-                            <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li> 
+                        <li><a href="Devolucion?enviar=devolucion"><button>Volver</button> </a></li>
+                        <li><a href="index.jsp"><button>Menu</button> </a></li>
+                            <li>
                                 <form action="CerrarSesion" method="post">
-                                    <input type="submit" class="btnSalir" value="Salir">
-                                </form>
-                            </li> 
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
+                            </li>  
                         </ul>
                     </li>
                 </ul>
@@ -59,7 +60,11 @@
         <input type="text" name="Emple_id" id="Devo_Emple_id" required>
         <label for="Devo_Emple_id">Id Empleado</label>
         </div>
-        <br>
+        <br><br>
+        <div class="contlabel4">
+        <input type="text" name="Prend_id" id="Prend_id" required>
+        <label for="Prend_id">Id Empleado</label>
+        </div>
         <button id="btncal" name="enviar" value="registerDevo">Enviar</button>
     </form>
 </body>

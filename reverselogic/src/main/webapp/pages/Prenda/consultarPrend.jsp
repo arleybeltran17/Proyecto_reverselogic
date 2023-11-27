@@ -27,7 +27,7 @@
                         <li><a href="Prenda?enviar=prenda"><button>Volver</button> </a></li>
                         <li><a href="index.jsp"><button>Menu</button> </a></li>
                     <li>
-                        <form action="LogoutServlet" method="post">
+                        <form action="CerrarSesion" method="post">
                             <button type="submit" class="btnSalir">Salir</button>
                         </form> 
                     </li> 
@@ -91,7 +91,7 @@
                     <% } %>
                 <% } else { %>
                     <div class="card">
-                        <p>No se encontraron Prendas.</p>
+                        <p>No Se Encontraron Prendas.</p>
                     </div>
                 <% } %>
             </div>

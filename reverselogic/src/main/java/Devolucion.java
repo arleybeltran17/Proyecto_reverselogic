@@ -106,6 +106,9 @@ public class Devolucion extends HttpServlet{
             
         }if(req.getParameter("Emple_id")!=null){
             r.setEmple_id(Integer.parseInt(req.getParameter("Emple_id"))); 
+            
+        }if(req.getParameter("Prend_id")!=null){
+            r.setPrend_id(Integer.parseInt(req.getParameter("Prend_id"))); 
         }
         else{
             System.out.println("Error Al Registrar Datos");
@@ -137,6 +140,9 @@ public class Devolucion extends HttpServlet{
 
         }if(req.getParameter("Devo_Emple_id")!=null){
             r.setEmple_id(Integer.parseInt(req.getParameter("Emple_id"))); 
+
+        }if(req.getParameter("Devo_Prend_id")!=null){
+            r.setPrend_id(Integer.parseInt(req.getParameter("Prend_id"))); 
         }
 
         
@@ -151,8 +157,6 @@ public class Devolucion extends HttpServlet{
             System.out.println("Error en la actualizacion del registro "+e.getMessage().toString());
         }
     }
-
-    
 
         private void listar(HttpServletRequest req, HttpServletResponse resp) {
     try {

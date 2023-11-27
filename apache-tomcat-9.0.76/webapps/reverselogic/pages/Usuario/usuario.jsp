@@ -21,10 +21,10 @@
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li> 
+                            <li>
                                 <form action="CerrarSesion" method="post">
-                                    <input type="submit" class="btnSalir" value="Salir">
-                                </form>
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
                             </li> 
                         </ul>
                     </li>

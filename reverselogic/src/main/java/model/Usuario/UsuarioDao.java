@@ -122,34 +122,36 @@ public class UsuarioDao {
         }
 }
 
-public boolean validarLogin(String Usu_Nombre, String Usu_Password) throws SQLException {
-    sql = "select 1 from usuario where Usu_Nombre=? and Usu_Password=?";
-    try {
-        con = Conexion.conectar();
-        ps = con.prepareStatement(sql);
-
-        ps.setString(1, Usu_Nombre);
-        ps.setString(2, Usu_Password);
-
+public UsuarioVo validarLogin(String username, String password) throws SQLException {
+    // Lógica para validar el login en la base de datos
+    // Consulta la base de datos, verifica las credenciales y devuelve un UsuarioVo si es válido
+    
+    // Ejemplo (consulta ficticia, adapta según tu base de datos):
+    String sql = "SELECT * FROM usuario WHERE Usu_Nombre = ? AND Usu_Password = ?";
+    
+    try (Connection con = Conexion.conectar();
+         PreparedStatement ps = con.prepareStatement(sql)) {
+        
+        ps.setString(1, username);
+        ps.setString(2, password);
+        
         try (ResultSet rs = ps.executeQuery()) {
-            return rs.next();
-        }
-    } catch (SQLException e) {
-        e.printStackTrace();
-        System.out.println("Error en la validación del login: " + e.getMessage());
-    } finally {
-        try {
-            if (con != null) {
-                con.close();
+            if (rs.next()) {
+                // Crear y devolver un objeto UsuarioVo con la información del usuario
+                UsuarioVo usuario = new UsuarioVo();
+                usuario.setUsu_Id(rs.getInt("Usu_Id"));
+                usuario.setUsu_Nombre(rs.getString("Usu_Nombre"));
+                usuario.setUsu_Rol(rs.getInt("Usu_Rol"));
+                
+                // Puedes establecer otros atributos según tu diseño de base de datos
+                
+                return usuario;
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("Error al cerrar la conexión: " + e.getMessage());
         }
     }
-
-    return false;
+    
+    // Si no se encontró un usuario válido, devuelve null
+    return null;
 }
-
 }
 
