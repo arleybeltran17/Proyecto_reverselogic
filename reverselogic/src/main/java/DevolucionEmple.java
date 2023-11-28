@@ -34,7 +34,7 @@ public class DevolucionEmple extends HttpServlet{
             break;
 }
             case "RegistrarDevolucion":
-            req.getRequestDispatcher("pages/CrudEmpleado/Devoluciones/RegistrarDevoluviones.jsp").forward(req, resp);
+            req.getRequestDispatcher("pages/CrudEmpleado/Devoluciones/RegistrarDevoluciones.jsp").forward(req, resp);
             System.out.println("Se Ha Redireccionado Al Register");
             break;
 

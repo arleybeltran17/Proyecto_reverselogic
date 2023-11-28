@@ -23,8 +23,13 @@
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
-                            <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li><a href="#"><button>Salir</button> </a></li>
+                            <li><a href="ProductoEmple?enviar=productoEmple"><button>Volver</button> </a></li>
+                            <li><a href="menuEmp.jsp"><button>Menu</button> </a></li>
+                            <li>
+                                <form action="CerrarSesion" method="post">
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -33,7 +38,7 @@
             <h1>Registrar Productos</h1>
             <div class="cont12">
            
-            <form action="ReverseLogic" method="post">
+            <form action="ProductoEmple" method="post">
     
             <label for="Prod_Nombre"> Nombre Producto</label>
             <input type="text" name="Prod_Nombre" id="Prod_Nombre" placeholder="Ingrese El Nombre Del Producto">
@@ -47,7 +52,7 @@
             <label for="Mate_ID"> Id Material</label>
             <input type="text" name="Mate_Id" id="Mate_Id"  placeholder="Ingrese El Id Del Material">
     
-            <button name="enviar" value="registerProd">Enviar</button>
+            <button name="enviar" value="RegistrarProductos">Enviar</button>
     
         </form>
 </body>

@@ -63,7 +63,7 @@
         <br><br>
         <div class="contlabel4">
         <input type="text" name="Prend_id" id="Prend_id" required>
-        <label for="Prend_id">Id Empleado</label>
+        <label for="Prend_id">Id Prenda</label>
         </div>
         <button id="btncal" name="enviar" value="registerDevo">Enviar</button>
     </form>

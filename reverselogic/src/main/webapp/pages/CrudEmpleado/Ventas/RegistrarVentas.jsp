@@ -23,8 +23,13 @@
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
-                            <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li><a href="#"><button>Salir</button> </a></li>
+                            <li><a href="VentaEmple?enviar=ventaEmple"><button>Volver</button> </a></li>
+                            <li><a href="menuEmp.jsp"><button>Menu</button> </a></li>
+                            <li>
+                                <form action="CerrarSesion" method="post">
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -33,7 +38,7 @@
             <h1>Registrar Venta</h1>
             <div class="cont12">
            
-    <form action="Venta" method="post">
+    <form action="VentaEmple" method="post">
         <br>
         <div class="contlabel">
         <input type="number" name="Vent_Cantidad" id="Vent_Cantidad" required>
@@ -65,7 +70,7 @@
         <label for="Prend_Id">Id Prenda</label>
         </div>
         <br>
-        <button id="btncal" name="enviar" value="registerVent">Enviar</button>
+        <button id="btncal" name="enviar" value="RegistrarVenta">Enviar</button>
 
     </form>
 </body>

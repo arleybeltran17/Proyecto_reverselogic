@@ -35,7 +35,7 @@
                                 <h2>Venta</h2>
                             </div>
                                 <div class="btnContainer">
-                                   <a href="Ventas?enviar=ventaEmple"> <button class="">Ingresar</button></a>
+                                   <a href="VentaEmple?enviar=ventaEmple"> <button class="">Ingresar</button></a>
                                 </div>
                             
                         </div>
@@ -49,7 +49,7 @@
                             <div class="detalle">
                                 <h2>Producto</h2>
                                 <div class="btnContainer">
-                                    <a href="Productos?enviar=productoEmple"> <button class="btnEliminar">Ingresar</button></a>
+                                    <a href="ProductoEmple?enviar=productoEmple"> <button class="btnEliminar">Ingresar</button></a>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                             <div class="detalle">
                                 <h2>Devolución</h2>
                                 <div class="btnContainer">
-                                    <a href="Devoluciones?enviar=DevolucionEmple"> <button class="btnEliminar">Ingresar</button></a>
+                                    <a href="DevolucionEmple?enviar=DevolucionEmple"> <button class="btnEliminar">Ingresar</button></a>
 
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                             <div class="detalle">
                                 <h2>Prenda</h2>
                                 <div class="btnContainer">
-                                    <a href="Prendas?enviar=prendasEmple"> <button class="btnEliminar">Ingresar</button></a>
+                                    <a href="PrendasEmple?enviar=prendasEmple"> <button class="btnEliminar">Ingresar</button></a>
 
                                 </div>
                             </div>
@@ -88,24 +88,6 @@
                     </div>
                 </div>
 
- 
-
-                
-                <div class="cards">
-                    <div class="prendas">
-                        <div class="imgChaqueta">
-                            <img src="img/cliente.jpg" alt="" width="200px" height="110">
-                            <div class="detalle">
-                                <h2>Cliente</h2>
-                                <div class="btnContainer">
-                                    <a href="cliente.jsp"> <button class="btnEliminar">Ingresar</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-         </div>
             <footer>
                 <div class="media">
                       <a href="https://www.facebook.com/profile.php?id=100037372663548"><img class="img1" src="img/facebook.png"></a>

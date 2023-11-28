@@ -20,8 +20,12 @@
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
-                            <li><a href="index.jsp"><button>Menú</button> </a></li>
-                            <li><a href="#"><button>Salir</button> </a></li>
+                            <li><a href="menuEmp.jsp"><button>Menú</button> </a></li>
+                            <li>
+                                <form action="CerrarSesion" method="post">
+                                    <button type="submit" class="btnSalir">Salir</button>
+                                </form> 
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -38,7 +42,7 @@
                         <h2>Registrar</h2>
                     </div>
                         <div class="btnContainer">
-                           <a href="Prenda?enviar=RegistrarPrenda"> <button class="">Ingresar</button></a>
+                           <a href="PrendasEmple?enviar=RegistrarPrenda"> <button class="">Ingresar</button></a>
                         </div>
                     
                 </div>
@@ -55,7 +59,7 @@
                     <div class="detalle">
                         <h2>Consultar</h2>
                         <div class="btnContainer">
-                            <a href="Prenda?enviar=ConsultarPrenda"> <button class="btnEliminar">Ingresar</button></a>
+                            <a href="PrendaEmple?enviar=ConsultarPrenda"> <button class="btnEliminar">Ingresar</button></a>
 
                         </div>
                     </div>

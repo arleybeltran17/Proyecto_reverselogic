@@ -164,15 +164,15 @@
     <url-pattern>/PrendasEmple</url-pattern>  
   </servlet-mapping>
 
-                     <!--? Definición del servlet DevolucionesEmple -->
+                     <!--? Definición del servlet DevolucionEmple -->
   <servlet> 
-    <servlet-name>DevolucionesEmple</servlet-name> 
-    <servlet-class>DevolucionesEmple</servlet-class> 
+    <servlet-name>DevolucionEmple</servlet-name> 
+    <servlet-class>DevolucionEmple</servlet-class> 
   </servlet> 
   
   <servlet-mapping> 
-    <servlet-name>DevolucionesEmple</servlet-name> 
-    <url-pattern>/DevolucionesEmple</url-pattern>  
+    <servlet-name>DevolucionEmple</servlet-name> 
+    <url-pattern>/DevolucionEmple</url-pattern>  
   </servlet-mapping>
   
                        <!--? Definición del servlet ProductoEmple -->
