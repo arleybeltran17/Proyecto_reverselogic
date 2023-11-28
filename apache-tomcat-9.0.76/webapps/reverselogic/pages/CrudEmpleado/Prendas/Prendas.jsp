@@ -20,7 +20,7 @@
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
-                            <li><a href="menuEmp.jsp"><button>Menú</button> </a></li>
+                    <li><a href="MenuEmpleado?enviar=menu"><button>Menu</button> </a></li>
                             <li>
                                 <form action="CerrarSesion" method="post">
                                     <button type="submit" class="btnSalir">Salir</button>
@@ -59,7 +59,7 @@
                     <div class="detalle">
                         <h2>Consultar</h2>
                         <div class="btnContainer">
-                            <a href="PrendaEmple?enviar=ConsultarPrenda"> <button class="btnEliminar">Ingresar</button></a>
+                            <a href="PrendasEmple?enviar=ConsultarPrenda"> <button class="btnEliminar">Ingresar</button></a>
 
                         </div>
                     </div>

@@ -27,6 +27,50 @@
             </div>
         </header>
             <main class="containerCards">
+        <div class="cards">
+                    <div class="prendas">
+                        <div class="imgChaqueta">
+                            <img src="img/Producto.jpg" alt="" width="200px" height="110">
+                            <div class="detalle">
+                                <h2>Producto</h2>
+                                <div class="btnContainer">
+                                    <a href="ProductoEmple?enviar=productoEmple"> <button class="btnEliminar">Ingresar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="prendas">
+                        <div class="imgChaqueta">
+                            <img src="img/prenda.jpg" alt="" width="200px" height="110">
+                            <div class="detalle">
+                                <h2>Prenda</h2>
+                                <div class="btnContainer">
+                                    <a href="PrendasEmple?enviar=prendasEmple"> <button class="btnEliminar">Ingresar</button></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="prendas">
+                        <div class="imgChaqueta">
+                            <img src="img/detallitos.png" alt="" width="200px" height="110">
+                            <div class="detalle">
+                                <h2>Detalles De Prenda</h2>
+                                <div class="btnContainer">
+                                    <a href="Detalles?enviar=Detalles"> <button class="btnDetalle">Ingresar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="cards">
                     <div class="prendas">
                         <div class="imgChaqueta">
@@ -45,22 +89,6 @@
                 <div class="cards">
                     <div class="prendas">
                         <div class="imgChaqueta">
-                            <img src="img/Producto.jpg" alt="" width="200px" height="110">
-                            <div class="detalle">
-                                <h2>Producto</h2>
-                                <div class="btnContainer">
-                                    <a href="ProductoEmple?enviar=productoEmple"> <button class="btnEliminar">Ingresar</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-    
-                <div class="cards">
-                    <div class="prendas">
-                        <div class="imgChaqueta">
                             <img src="img/devolucion.png" alt="" width="200px" height="110">
                             <div class="detalle">
                                 <h2>Devolución</h2>
@@ -73,21 +101,6 @@
                     </div>
                 </div>
                 
-                <div class="cards">
-                    <div class="prendas">
-                        <div class="imgChaqueta">
-                            <img src="img/prenda.jpg" alt="" width="200px" height="110">
-                            <div class="detalle">
-                                <h2>Prenda</h2>
-                                <div class="btnContainer">
-                                    <a href="PrendasEmple?enviar=prendasEmple"> <button class="btnEliminar">Ingresar</button></a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             <footer>
                 <div class="media">
                       <a href="https://www.facebook.com/profile.php?id=100037372663548"><img class="img1" src="img/facebook.png"></a>

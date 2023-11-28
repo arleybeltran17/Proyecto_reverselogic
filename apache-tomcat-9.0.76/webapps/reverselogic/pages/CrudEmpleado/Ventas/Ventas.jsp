@@ -19,7 +19,7 @@
                         <a href="#"><img class="imgbtn" src="img/usuario-de-perfil.png" ></a>
                         <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
-                            <li><a href="menuEmp.jsp"><button>Menu</button> </a></li>
+                    <li><a href="MenuEmpleado?enviar=menu"><button>Menu</button> </a></li>
                             <li>
                                 <form action="CerrarSesion" method="post">
                                     <button type="submit" class="btnSalir">Salir</button>

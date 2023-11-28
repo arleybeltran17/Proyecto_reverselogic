@@ -31,6 +31,11 @@ public class Detalles extends HttpServlet{
             System.out.println("Se Ha Redireccionado Al Menu De Detalles");
             break;
             }
+            case "Detalles":{
+            req.getRequestDispatcher("pages/CrudEmpleado/Detalles/Detalles.jsp").forward(req, resp);
+            System.out.println("Se Ha Redireccionado Al Menu De Detalles");
+            break;
+            }
         }
     }
 }

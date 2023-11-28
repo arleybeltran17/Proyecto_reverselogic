@@ -89,6 +89,9 @@ public class DevolucionEmple extends HttpServlet{
             
         }if(req.getParameter("Emple_id")!=null){
             r.setEmple_id(Integer.parseInt(req.getParameter("Emple_id"))); 
+            
+        }if(req.getParameter("Prend_id")!=null){
+            r.setPrend_id(Integer.parseInt(req.getParameter("Prend_id"))); 
         }
         else{
             System.out.println("Error Al Registrar Datos");
@@ -98,7 +101,7 @@ public class DevolucionEmple extends HttpServlet{
             System.out.println("Registro insertado correctamente");
 
             //? Redireccionamiento preventivo.       
-            req.getRequestDispatcher("pages/CrudEmpleado/Devoluciones/consultarDevolucion.jsp").forward(req, resp);
+            req.getRequestDispatcher("pages/CrudEmpleado/Devoluciones/ConsultarDevoluciones.jsp").forward(req, resp);
 
         } catch (Exception e) {
             System.out.println("Error en la inserción del registro "+e.getMessage().toString());

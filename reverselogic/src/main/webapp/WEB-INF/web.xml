@@ -197,4 +197,50 @@
     <url-pattern>/VentaEmple</url-pattern>  
   </servlet-mapping>
 
+  <!--? Definición del servlet ventaEmple -->
+  <servlet> 
+    <servlet-name>MenuEmpleado</servlet-name> 
+    <servlet-class>MenuEmpleado</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>MenuEmpleado</servlet-name> 
+    <url-pattern>/MenuEmpleado</url-pattern>  
+  </servlet-mapping>
+
+  <!--detalles del empleado-->
+
+<!--colores-->
+  <servlet> 
+    <servlet-name>ColoresEmple</servlet-name> 
+    <servlet-class>ColoresEmple</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>ColoresEmple</servlet-name> 
+    <url-pattern>/ColoresEmple</url-pattern>  
+  </servlet-mapping>
+
+  <!--materiales-->
+  <servlet> 
+    <servlet-name>MaterialesEmple</servlet-name> 
+    <servlet-class>MaterialesEmple</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>MaterialesEmple</servlet-name> 
+    <url-pattern>/MaterialesEmple</url-pattern>  
+  </servlet-mapping>
+  
+  <!--metodo de pago-->
+  <servlet> 
+    <servlet-name>MetodosDePagoEmple</servlet-name> 
+    <servlet-class>MetodosDePagoEmple</servlet-class> 
+  </servlet> 
+  
+  <servlet-mapping> 
+    <servlet-name>MetodosDePagoEmple</servlet-name> 
+    <url-pattern>/MetodosDePagoEmple</url-pattern>  
+  </servlet-mapping>
+
 </web-app>

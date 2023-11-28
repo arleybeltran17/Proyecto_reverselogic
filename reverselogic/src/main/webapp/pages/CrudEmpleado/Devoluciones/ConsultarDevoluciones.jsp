@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
                     <li><a href="DevolucionEmple?enviar=DevolucionEmple"><button>Volver</button> </a></li>
-                    <li><a href="menuEmp.jsp"><button>Menu</button> </a></li>
+                    <li><a href="MenuEmpleado?enviar=menu"><button>Menu</button> </a></li>
                     <li>
                         <form action="CerrarSesion" method="post">
                             <button type="submit" class="btnSalir">Salir</button>

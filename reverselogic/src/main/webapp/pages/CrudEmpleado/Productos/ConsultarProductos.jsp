@@ -24,7 +24,7 @@
                     <ul>
                             <li><a href="#"><button>Perfil</button></a></li>
                             <li><a href="ProductoEmple?enviar=productoEmple"><button>Volver</button> </a></li>
-                            <li><a href="menuEmp.jsp"><button>Menu</button> </a></li>
+                    <li><a href="MenuEmpleado?enviar=menu"><button>Menu</button> </a></li>
                             <li>
                                 <form action="CerrarSesion" method="post">
                                     <button type="submit" class="btnSalir">Salir</button>
@@ -65,7 +65,7 @@
                                 <p class="card--subtittle">CANTIDAD</p>
                                 <p id="Prod_Cant_<%= producto.getProd_id() %>" class="cardProdCant"><%= producto.getProd_cant() %></p>
                                 <p class="card--subtittle">PRECIO UNIDAD</p>
-                                <p id="Prod_PrecioUni_<%= producto.getProd_id() %>" class="cardProdPrecioUni"><%= producto.getProd_preciouni() %></p>
+                                <p id="Prod_PrecioUni_<%= producto.getProd_id() %>" class="cardProdPrecioUni"><%= producto.getProd_precioUni() %></p>
                                 <p class="card--subtittle">ID MATERIAL</p>
                                 <p id="Mate_Id_<%= producto.getProd_id() %>" class="cardMateId"><%= producto.getMate_id() %></p>
                             </div>
