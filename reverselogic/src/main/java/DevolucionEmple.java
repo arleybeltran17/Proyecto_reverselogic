@@ -113,7 +113,7 @@ public class DevolucionEmple extends HttpServlet{
     try {
         List<DevolucionVo> devolucion = rd.listarDevo();
         req.setAttribute("devoluciones", devolucion);
-        req.getRequestDispatcher("pages/CrudEmpleado/Devoluciones/consultarDevolucion.jsp").forward(req, resp);
+        req.getRequestDispatcher("pages/CrudEmpleado/Devoluciones/ConsultarDevolucion.jsp").forward(req, resp);
 
         System.out.println("Datos listados correctamente");
     } catch (Exception e) {

@@ -24,7 +24,6 @@
                 <a href="#"><img class="imgbtn" src="<%= request.getContextPath() %>/img/usuario-de-perfil.png" alt="Usuario"></a>
                 <ul>
                     <li><a href="#"><button>Perfil</button></a></li>
-                        <li><a href="MetodoDePago?enviar=metodo"><button>Volver</button> </a></li>
                         <li><a href="MenuEmpleado?enviar=menu"><button>Menu</button> </a></li>
                         <li><a href="MetodosDePagoEmple?enviar=Metodos"><button>Volver</button> </a></li> 
                     <li>
